@@ -7,18 +7,17 @@
     <title>Trackgenix Landing page</title>
 </head>
 <body>
-    <div>
-        <div> 
-            <h1>Trackgenix</h1>
-            <h2>By GigaTech Software Solutions SA</h2>
-            <p>
-                The company GigaTech Software Solutions SA provides software development services to other companies,
-                which have too many employees. Because of this "Trackgenix" was created. 
-                in each project and provides information to the companies so they can make better decisions.
-            </p>
-        </div>
+    <main> 
+        <h1>Trackgenix</h1>
+        <h2>By GigaTech Software Solutions SA</h2>
+        <p>
+            The company GigaTech Software Solutions SA provides software development services to other companies,
+            which have too many employees. Because of this "Trackgenix" was created. 
+            in each project and provides information to the companies so they can make better decisions.
+        </p>
+        
         <img src="./assets/principal-page.png" alt="GigaTech Software Solutions">
-    </div>
+    </main>
     <div>
         <nav>
             <div>
@@ -39,7 +38,160 @@
             </ul>
         </nav>
     </div>
-   
-   
+<!--we are and choose-->
+    <section>
+        <div id="who-we-are">
+            <h2>Who we are</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Perspiciatis veritatis at possimus error perferendis autem nisi totam repudiandae.
+                Iusto explicabo iure dolore magni odit eos ipsum rem odio ratione rerum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ea rerum dolor placeat id eos dolorum iure praesentium, labore minus quidem soluta optio veritatis aspernatur,
+                recusandae deleniti sapiente nostrum nihil eveniet.
+            </p>
+        </div>
+        <div id="why-choose-us" >
+            <h2>Why choose us</h2>
+            <h3>Productivity Booster</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Adipisci inventore laborum maxime dolore? Molestias qui minima quae repellendus placeat unde,
+                maxime nulla molestiae exercitationem sit voluptate porro amet magni possimus.
+            </p>
+            <h3>Work traceability</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quos, natus autem, minus, neque at corrupti praesentium non impedit aspernatur repellat dicta!
+                Possimus nisi inventore expedita magnam sit ducimus harum cupiditate.
+            </p>
+            <h3>Leadership and team management</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolor iste fugit iure cum atque esse facere, hic assumenda,
+                ratione quibusdam nulla nihil voluptatem consequatur molestias illo.
+                Enim error saepe rerum.
+            </p>
+            <h3>Decision making</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sed, alias atque soluta temporibus, ex nisi nam, laudantium delectus vel rerum tempora saepe?
+                Quo quos tempore ex dolor eius a harum!
+            </p>
+        </div>
+    </section>
+<!--functionalities-->
+    <section id="functionalities">
+        <div>
+            <h4>Hours log</h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Nesciunt rerum ipsa tempore, assumenda, maiores a velit impedit necessitatibus quas repellat quidem,
+                quis minus nihil amet dolores voluptatem. Ipsam, repudiandae et!
+            </p>
+        </div>
+        <div>
+            <h4>Resource management</h4>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptates eveniet id, accusamus, possimus a nihil,
+                nemo quos fugiat quis obcaecati consequatur praesentium impedit nisi odit accusantium quasi dolores
+                Accusantium, in?
+            </p>
+        </div>
+        <div>
+            <h4>Report</h4>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Totam sapiente cumque corporis nostrum suscipit quod, veniam doloremque laboriosam! Aliquam, consequuntur.
+                Voluptates maxime nesciunt ipsam exercitationem voluptate ducimus, cum vel iusto?
+            </p>
+        </div>
+        <div>
+            <h4>Multiple Roles</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem ipsam ea eius veniam, inventore asperiores harum neque animi atque unde officia optio
+                voluptatum omnis fugit eum ab, numquam voluptate velit.
+            </p>
+        </div>
+    </section>
+<!--contact-->
+    <section id="contact">
+        <h3>Contact</h3>
+        <form name="contact-form" method="get" action="">
+            <p>
+                <label>
+                    Name:
+                    <input type="text" name="name">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Email:
+                    <input type="email" name="email">
+                </label>
+            </p>
+            <p>
+                <label for="list">
+                    Contact area
+                </label>
+                <select name="area" id="list">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </p>
+            <p>
+                <label>
+                    Message:
+                    <textarea name="text" id="text-message" cols="50" rows="6">
+                    </textarea>
+                </label>
+            </p>
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
+            <p>
+                <button type="submit">Reset</button>
+            </p>
+        </form>
+    </section>
+<!--final section-->
+    <section id="final-section">
+        <ol id="products">
+            <h5>Products</h5>
+            <li>Features</li>
+            <li>Downloads</li>
+            <li>Integrations</li>
+            <li>Additional features</li>
+        </ol>
+        <ol id="enterprise">
+            <h5>About us</h5>
+            <li>Clients</li>
+            <li>Resources</li>
+            <li>Blog</li>
+        </ol>
+        <ol id="support">
+            <h5>Help</h5>
+            <li>Tutorials</li>
+            <li>API</li>
+            <li>Contact</li>
+        </ol>
+    </section>
+    <footer>
+        <section id="social-media">
+            <!--social media icons + anchor-->
+        </section>
+        <section>
+            <address>
+                Rosario, Argentina.
+            </address>
+            <small>
+                Copyright © 2022 Radium Rocket. All rights reserved
+            </small>
+        </section>
+    </footer>
 </body>
 </html>
