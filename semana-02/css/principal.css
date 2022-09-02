@@ -1,0 +1,17 @@
+#principal{
+    background-image: url(/semana-02/assets/images/principal-page.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#principal{
+    margin-left: 152px;
+    padding-bottom: 900px;
+}
+/* add background to h1, h2 and paragraph.
+main-text{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+}*/
