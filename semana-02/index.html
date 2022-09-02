@@ -6,27 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="web app to record and track hours worked by employees, by projects and much more.">
         <meta name="keywords" content="tracking, app, work, employee, company, project, software, solutions">
+        <script src="https://kit.fontawesome.com/bec91a9a13.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/common-style.css">
-        <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto?query=roboto">
+        <link rel="stylesheet" href="css/side-bar.css">
         <title>Trackgenix</title>
     </head>
     <body>
         <aside>
-            <div id="sidebar-logo">
-                <img src="./assets/logo/logo-rr.png" alt="trackgenix-logo">
+            <div id="side-bar-logo">
+                <img id="radium-logo" src="./assets/logo/logo-rr.png" alt="trackgenix-logo">
                 <span>
-                    <p>
-                        Trackgenix
-                    </p>
-                    <img src="./assets/logo/vector-closed.png" alt="vector">
+                    Trackgenix
+                    <img id="vector-logo" src="./assets/logo/vector-closed.png" alt="vector">
                 </span>
             </div>
             <nav>
                 <ul>
-                    <li><a href=""><img src="./assets/icons/home.png" alt="home"> Home</a></li>
-                    <li><a href=""><img src="./assets/icons/user.png" alt="sign-up"> Sign Up</a></li>
-                    <li><a href=""><img src="./assets/icons/sign-in.png" alt="log-in"> Login</a></li>
+                    <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i> Sign Up</a></li>
+                    <li><a href=""><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
                 </ul>
             </nav>
             <section id="sidebar-contact">
@@ -38,12 +37,12 @@
                 </ul>
             </section>
         </aside>
-        <header>
-            <h1>Trackgenix</h1>
-            <h2>By GigaTech Software Solutions SA</h2>
-        </header>
-        <main> 
-            <div>
+        <main>
+            <div id="principal"></div>
+                <header>
+                    <h1>Trackgenix</h1>
+                    <h2>By GigaTech Software Solutions SA</h2>
+                </header>
                 <p>
                     "The company GigaTech Software Solutions SA provides software development services to other companies,
                     which have too many employees. Because of this "Trackgenix" was created.
@@ -54,7 +53,6 @@
                 </p>
                 <img src="./assets/images/principal-page.png" alt="GigaTech Software Solutions">
             </div>
-            
          <!--secondary-->
             <div>
                 <section id="who-we-are">

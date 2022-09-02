@@ -1,0 +1,33 @@
+aside{
+    position: absolute;
+    width: 152px;
+    height: 982px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+#side-bar-logo{
+    background: rgba(55, 56, 103, 0.4);
+    padding-bottom: 15px;
+    font-weight:400px;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #373867;
+}
+#radium-logo{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#side-bar-logo span{
+    margin-left: 20px;
+}
+nav ul{    
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #F13312;
+}
+nav ul a{
+    color: #F13312;
+}
