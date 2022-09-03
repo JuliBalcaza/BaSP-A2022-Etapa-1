@@ -7,7 +7,6 @@
     margin-left: 152px;
     padding-bottom: 982px;
 }
-
 #principal-text{
     background-color: rgba(0, 0, 0, 0.3);
     font-weight: 400;
@@ -21,7 +20,6 @@
     top: 0px;
     color: #FFFFFF;
 }
-
 #principal-text h1{
     width: 199px;
     height: 47px;
@@ -40,8 +38,6 @@
     background-color:  #AACE9B;
     left: 205px;
     top: 217px;
-
-
 }
 #principal-text h2{
     width: 314px;
@@ -66,4 +62,35 @@
     font-size: 16px;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.75);
+}
+/*Who whe are section*/
+#who-we-are{
+    margin-top: 100px;
+}
+#para-who-1{
+    width: 1176px;
+    height: 206px;
+    left: 209px;
+    top: 268px;
+    margin-left: 209px;
+    margin-right: 55px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #373867;
+}
+#para-who-2{
+    width: 1178px;
+    height: 195px;
+    left: 207px;
+    top: 474px;
+    margin-left: 209px;
+    margin-right: 55px;
+    margin-bottom: 131px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #49A37B;
 }
