@@ -27,7 +27,6 @@
     height: 47px;
     left: 205px;
     top: 170px;
-    border-bottom: 2px solid #AACE9B;
     margin-top: 170px;
     margin-left: 22px;
     font-weight: 700;
@@ -35,10 +34,13 @@
     line-height: 47px;
 }
 #header-line{
-width: 452px;
-height: 0px;
-left: 205px;
-top: 217px;
+    width: 452px;
+    height: 2px;
+    margin-left: 22px;
+    background-color:  #AACE9B;
+    left: 205px;
+    top: 217px;
+
 
 }
 #principal-text h2{
@@ -51,6 +53,7 @@ top: 217px;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+    color: #FFFFFF;
 }
 .paragraph{
     width: 366px;
