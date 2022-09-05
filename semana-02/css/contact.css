@@ -6,7 +6,6 @@ form{
     font-size: 14px;
     line-height: 16px;
 }
-
 #contact-name{
     margin-top: 34px;
     margin-bottom: 34px;
@@ -83,7 +82,8 @@ form{
     margin-top: -133px;
     margin-left: 580px;
 }
-#submit{
+#submit{ 
+    /*button*/
     padding: 12px 20px;
     width: 177px;
     height: 48px;
@@ -92,8 +92,18 @@ form{
     background: #AACE9B;
     border-radius: 5px;
     border-color: #AACE9B;
+    /*button-font*/
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #373867;
+}
+#submit:hover{
+    background-color: #373867;
 }
 #reset{
+    /*button*/
     padding: 12px 20px;
     width: 117px;
     height: 48px;
@@ -103,5 +113,15 @@ form{
     background: #F13312;
     border-radius: 5px;
     border-color:  #F13312;
+    /*button-font*/
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #373867;
 }
+#reset:hover{
+    background-color: #AACE9B;
+}
+
 
