@@ -1,0 +1,19 @@
+#final-section{
+    background-image: url(/semana-02/assets/images/list-picture.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #373867;
+}
+#final-section article{
+    display: inline-block;
+    margin-top: 63px;
+}
+
+/*social media*/
+footer{
+    background-color:  #AACE9B;;
+}
+#social-media ul li{
+    display: inline-block;
+}

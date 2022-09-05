@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="css/side-bar.css">
         <link rel="stylesheet" href="./css/principal.css">
         <link rel="stylesheet" href="./css/secondary.css">
+        <link rel="stylesheet" href="./css/functionalities.css">
+        <link rel="stylesheet" href="./css/contact.css">
+        <link rel="stylesheet" href="./css/final-section.css">
         <title>Trackgenix</title>
     </head>
     <body>
@@ -133,7 +136,8 @@
             </div>
             <section id="functionalities">
                 <h3>Functionalities</h3>
-                <article>
+                <div class="line"></div>
+                <article class="article-funct-1">
                     <h4>Hours log</h4>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -142,7 +146,7 @@
                     </p>
                     <img src="./assets/Icons/hours-log.png" alt="clock">
                 </article>
-                <article>
+                <article class="article-funct-2">
                     <h4>Resource management</h4>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -152,7 +156,7 @@
                     </p>
                     <img src="./assets/Icons/resource-management.png" alt="resources">
                 </article>
-                <article>
+                <article class="article-funct-3">
                     <h4>Report</h4>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -161,7 +165,7 @@
                     </p>
                     <img src="./assets/Icons/reports.png" alt="reports">
                 </article>
-                <article>
+                <article class="article-funct-4">
                     <h4>Multiple Roles</h4>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -171,18 +175,20 @@
                     <img src="./assets/Icons/multiple-roles.png" alt="roles">
                 </article>
             </section>
+            <div class="clear"></div>
             <section id="contact">
                 <h2>Contact</h2>
+                <div class="line"></div>
                 <form name="contact-form">
-                    <div>
-                        <label>Name:</label>
+                    <div id="contact-name">
+                        <label><p>Name</p></label>
                         <input type="text" name="name" placeholder="Your Name Here">
                     </div>
-                    <div>
-                        <label>Email:</label>
+                    <div id="contact-email">
+                        <label><p>Email</p> </label>
                         <input type="email" name="email" placeholder="Your Email Here">
                     </div>
-                    <div>
+                    <div id="contact-select">
                         <select name="select-area" id="contact-area">
                             <option value="" disabled selected hidden>Contact area</option>
                             <option value="human-resources">Human Resources</option>
@@ -190,13 +196,14 @@
                             <option value="commercialization">Commercialization</option>
                         </select>
                     </div>
-                    <div>
-                        <label>Message:</label>
+                    <div id="contact-message">
+                        <label><p>Message</p></label>
                         <textarea name="text" id="text-message" cols="50" rows="6" placeholder="Your Message Here"></textarea>
                     </div>
-                    <button type="submit">Send Message</button>
-                    <button type="reset">Reset</button>
+                    <button id="submit" type="submit">Send Message</button>
+                    <button id="reset" type="reset">Reset</button>
                 </form>
+                <div class="clear"></div>
             </section>
             <section id="final-section">
                 <article id="products">
