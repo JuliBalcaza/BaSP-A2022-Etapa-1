@@ -80,9 +80,8 @@ form{
 }
 #contact-select{
     position: absolute;
-    margin-top: -120px;
-    margin-bottom: 472px;
-    margin-left: 789px;
+    margin-top: -133px;
+    margin-left: 580px;
 }
 #submit{
     padding: 12px 20px;
@@ -92,6 +91,7 @@ form{
     margin-bottom: 54px;
     background: #AACE9B;
     border-radius: 5px;
+    border-color: #AACE9B;
 }
 #reset{
     padding: 12px 20px;
@@ -102,5 +102,6 @@ form{
     margin-bottom: 54px;
     background: #F13312;
     border-radius: 5px;
+    border-color:  #F13312;
 }
 

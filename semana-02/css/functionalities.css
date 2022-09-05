@@ -1,38 +1,25 @@
-.article-funct-1{
-    margin-top: 88px;
-    margin-left: 150px;
-    margin-bottom: 118.58px;
-}
-.article-funct-1 h4 {
+#functionalities h3 {
+    text-align: center;
     margin-top: 88px;
     margin-right: 125px;
     margin-bottom: 13px;
     margin-left: 22.58px;
 }
-.article-funct-3{
-    margin-left: 150px;
-    margin-bottom: 54.58px;
-}
 #functionalities article{
     display: inline-block;
     width: 42%;
 }
+#functionalities article h4{
+    margin-top: 88px;
+    margin-left: 310px;
+}
+#functionalities article p{
+   margin-left: 310px;
+   margin-top: 12px;
+}
 #functionalities article img{
-    
-    float: left;
-    background-color: blueviolet;
+    position: relative;
+    top: -150px;
+    left: 150px;
 }
-#functionalities article h4 p{
-   float: right;
-   
-}
-
-#functionalities h3{
-    text-align: center;
-    margin-top: 27px;
-    height: 57px;
-    left: 105px;
-    top: 27px;
-}
-
 
