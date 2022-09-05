@@ -6,6 +6,7 @@
     margin-top: 88px;
     margin-bottom: 13px;
     margin-left: 22.58px;
+    pointer-events:none;
     text-align: center;
 }
 #functionalities article h4{
@@ -21,4 +22,7 @@
     top: -150px;
     left: 150px;
 }
-
+#functionalities article img:hover{
+    transform: scale(1.2);
+    transition: 250ms;  
+}

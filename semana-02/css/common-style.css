@@ -25,11 +25,19 @@ h3{
     line-height: 47px;
     color: #000000;
 }
+h3:hover{
+    color: #F13312;
+    transition: 250ms;
+}
 h4{
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
     color: #000000;
+}
+h4:hover{
+    color: #F13312;
+    transition: 250ms;
 }
 h5{
     font-weight: 500;
