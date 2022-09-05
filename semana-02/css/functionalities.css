@@ -1,20 +1,20 @@
-#functionalities h3 {
-    text-align: center;
-    margin-top: 88px;
-    margin-bottom: 13px;
-    margin-left: 22.58px;
-}
 #functionalities article{
     display: inline-block;
     width: 42%;
+}
+#functionalities h3{
+    margin-top: 88px;
+    margin-bottom: 13px;
+    margin-left: 22.58px;
+    text-align: center;
 }
 #functionalities article h4{
     margin-top: 88px;
     margin-left: 310px;
 }
 #functionalities article p{
-   margin-left: 310px;
-   margin-top: 12px;
+    margin-top: 12px;
+    margin-left: 310px;
 }
 #functionalities article img{
     position: relative;

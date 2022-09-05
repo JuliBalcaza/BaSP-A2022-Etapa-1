@@ -1,10 +1,10 @@
 form{
     position: relative;
     margin-left: 206px;
-    color: #373867;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    color: #373867;
 }
 #contact-name{
     margin-top: 34px;
@@ -14,52 +14,41 @@ form{
     margin-bottom: 7px;
 }
 #contact-name input {
-    box-sizing: border-box;
-    padding: 10px 12px;
     width: 450px;
     height: 37px;
-    left: 0%;
-    right: 0%;
-    top: 23px;
-    border: 1px solid #373867;
-    border-radius: 4px;
-}
-#contact-email input {
-    box-sizing: border-box;
     padding: 10px 12px;
-    width: 450px;
-    height: 37px;
-    left: 0%;
-    right: 0%;
-    top: 23px;
+    box-sizing: border-box;
     border: 1px solid #373867;
     border-radius: 4px;
 }
 #contact-email p{
     margin-bottom: 7px;
 }
-#contact-message textarea{
+#contact-email input {
+    width: 450px;
+    height: 37px;
+    padding: 10px 12px;
     box-sizing: border-box;
-    height: 179.57;
-    width: 1029px;
-    left: 0%;
-    right: 0%;
-    top: 19.83%;
-    bottom: 0%;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #373867;
     border-radius: 4px;
 }
 #contact-message p{
     margin-top: 44px;
     margin-bottom: 29.43px;
 }
+#contact-message textarea{
+    height: 179.57;
+    width: 1029px;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
 #contact-message ::placeholder{
     width: 114px;
     height: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
     padding-top: 10px;
     padding-left: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
@@ -67,13 +56,10 @@ form{
     opacity: 0.5;
 }
 #contact-area {
-    box-sizing: border-box;
-    padding: 10px 12px;
     width: 450px;
     height: 37px;
-    left: 0%;
-    right: 0%;
-    top: 23px;
+    padding: 10px 12px;
+    box-sizing: border-box;
     border: 1px solid #373867;
     border-radius: 4px;
 }
@@ -82,21 +68,22 @@ form{
     margin-top: -133px;
     margin-left: 580px;
 }
+/*buttons*/
 #submit{ 
     /*button*/
-    padding: 12px 20px;
     width: 177px;
     height: 48px;
+    padding: 12px 20px;
     margin-top: 16px;
     margin-bottom: 54px;
     background: #AACE9B;
     border-radius: 5px;
     border-color: #AACE9B;
-    /*button-font*/
+    /*font*/
+    text-align: center;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    text-align: center;
     color: #373867;
 }
 #submit:hover{
@@ -104,20 +91,20 @@ form{
 }
 #reset{
     /*button*/
-    padding: 12px 20px;
     width: 117px;
     height: 48px;
+    padding: 12px 20px;
     margin-top: 16px;
-    margin-left: 735px;
     margin-bottom: 54px;
+    margin-left: 735px;
     background: #F13312;
     border-radius: 5px;
     border-color:  #F13312;
-    /*button-font*/
+    /*font*/
+    text-align: center;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
-    text-align: center;
     color: #373867;
 }
 #reset:hover{

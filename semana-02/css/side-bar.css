@@ -1,14 +1,30 @@
 aside{
-    position: absolute;
+    position:fixed;
     width: 152px;
-    height: 982px;
     left: 0px;
     top: 0px;
     background: #FFFFFF;
+    color: #F13312;
+}
+nav {
+    margin-top: 30px;
+}
+nav ul{   
+    margin-left: 30px;
+    text-align:left;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+nav ul li{
+    padding: 30px 0px;
+}
+nav ul a{
+    color: #F13312;
 }
 #side-bar-logo{
-    background: rgba(55, 56, 103, 0.4);
     padding-bottom: 15px;
+    background: rgba(55, 56, 103, 0.4);
     font-weight:400px;
     font-size: 20px;
     line-height: 23.44px;
@@ -21,36 +37,18 @@ aside{
 #side-bar-logo span{
     margin-left: 20px;
 }
-nav {
-    margin-top: 30px;
-}
-nav ul{    
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #F13312;
-    text-align:left;
-    margin-left: 30px;
-}
-nav ul li{
-    padding: 30px 0px;
-}
-nav ul a{
-    color: #F13312;
+#side-bar-contact{
+    margin-top: 125px;
 }
 #side-bar-contact h3{
-    margin-left: 15px;
     margin-bottom: 20px;
+    margin-left: 15px;
     text-decoration: underline 1px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: #F13312;
-}
-#side-bar-contact{
-   color: #F13312;
-   margin-top: 300px;
+    
 }
 #side-bar-contact ul li{
     padding: 15px;

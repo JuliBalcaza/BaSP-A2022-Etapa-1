@@ -1,24 +1,23 @@
-#final-section{
+.final-section{
     background-image: url(/semana-02/assets/images/list-picture.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #373867;
 }
-#final-section article{
+.final-section article{
     display: inline-block;
     margin-top: 63px;
 }
-#final-section article ol li{
-list-style:decimal;
-
-}
-#final-section article h5{
+.final-section article h5{
     margin-bottom: 25px;
 }
+.final-section article ol li{
+    list-style:decimal;
+}
 #products{
-    margin-left: 474px;
     margin-bottom: 74px;
+    margin-left: 474px;
 }
 #enterprise{
     margin-left: 137px;
@@ -38,7 +37,7 @@ footer{
     margin-left: 561px;
 }
 #address-copy p{
-    text-align: center;
     padding-bottom: 27px;
+    text-align: center;
     font-weight: 400;
 }
