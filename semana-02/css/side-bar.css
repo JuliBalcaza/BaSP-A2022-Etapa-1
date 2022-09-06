@@ -6,7 +6,7 @@ aside{
     background: #FFFFFF;
     color: #F13312;
 }
-nav {
+nav{
     margin-top: 30px;
 }
 nav ul{   
@@ -44,7 +44,7 @@ nav ul li:hover{
     margin-left: 20px;
 }
 #side-bar-contact{
-    margin-top: 125px;
+    margin-top: 180px;
 }
 #side-bar-contact h3{
     margin-bottom: 20px;
@@ -53,8 +53,7 @@ nav ul li:hover{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    color: #F13312;
-    
+    color: #F13312; 
 }
 #side-bar-contact ul li{
     padding: 15px;

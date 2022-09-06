@@ -2,7 +2,7 @@
     background-image: url(/semana-02/assets/images/principal-page.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
 }
 #principal{
     margin-left: 152px;
@@ -10,9 +10,10 @@
 }
 #principal-text{
     position: absolute;
-    left: 183px;
+    width: 1176px;
+    left: 58px;
     top: 0px;
-    width: 481px;
+    width: 206px;
     margin-left: 121px;
     background-color: rgba(0, 0, 0, 0.3);
     font-weight: 400;
@@ -60,8 +61,9 @@
     margin-top: 100px;
 }
 #para-who-1{
-    margin-left: 209px;
+    width: 1176px;
     margin-right: 55px;
+    margin-left: 208px;
     text-align: center;
     font-weight: 500;
     font-size: 20px;
@@ -69,10 +71,11 @@
     color: #373867;
 }
 #para-who-2{
+    width: 1176px;
     margin-top: 30px;
     margin-right: 55px;
+    margin-left: 208px;
     margin-bottom: 131px;
-    margin-left: 209px;
     text-align: center;
     font-weight: 400;
     font-size: 18px;

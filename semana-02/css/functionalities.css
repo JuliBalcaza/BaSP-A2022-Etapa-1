@@ -17,6 +17,7 @@
     margin-top: 12px;
     margin-left: 310px;
 }
+/*icons*/
 #functionalities article svg{
     position: relative;
     top: -150px;
@@ -25,13 +26,9 @@
 svg:hover rect{
     stroke: #F13312;
 }
-
-.cash:hover{
-    stroke: #F13312;
-    fill: #F13312;
-}
 svg:hover circle{
     stroke: #F13312;
+
 }
 svg:hover line{
     stroke: #F13312;
@@ -42,3 +39,4 @@ svg:hover path{
 #cash:hover{
     fill:#F13312;
 }
+
