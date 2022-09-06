@@ -25,6 +25,11 @@
 svg:hover rect{
     stroke: #F13312;
 }
+
+.cash:hover{
+    stroke: #F13312;
+    fill: #F13312;
+}
 svg:hover circle{
     stroke: #F13312;
 }
@@ -33,4 +38,7 @@ svg:hover line{
 }
 svg:hover path{
     stroke: #F13312;
+}
+#cash:hover{
+    fill:#F13312;
 }
