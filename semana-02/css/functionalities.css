@@ -17,12 +17,20 @@
     margin-top: 12px;
     margin-left: 310px;
 }
-#functionalities article img{
+#functionalities article svg{
     position: relative;
     top: -150px;
     left: 150px;
 }
-#functionalities article img:hover{
-    transform: scale(1.2);
-    transition: 250ms;  
+svg:hover rect{
+    stroke: #F13312;
+}
+svg:hover circle{
+    stroke: #F13312;
+}
+svg:hover line{
+    stroke: #F13312;
+}
+svg:hover path{
+    stroke: #F13312;
 }
