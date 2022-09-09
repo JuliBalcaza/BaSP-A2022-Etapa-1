@@ -6,7 +6,7 @@ For now, this is the Landing page with its different sections.
 
 How to open:
 ```
-1- access to folder "Semana-02" inside "BaSP-A2022-Etapa-1"
+1- access to folder "Semana-03" inside "BaSP-A2022-Etapa-1"
 2- open file "index.html" on your browser.
 ```
 
@@ -22,6 +22,11 @@ Using Git and Github we create a repository and control the different versions o
 ### Week 02
 During this week we included the styles corresponding to the HTML structure to ensure that when viewing the page, 
 it looks identical to the landing of the screenflow made with Figma.
+Using Git and Github we save all the changes we make on the documents.
+
+### Week 03
+This week we applied Flexbox Layout model to the HTML structure, trying to copy the styles of the landing page that we did with Figma, but also taking into account different breakpoints to display it correctly on mobile, tablet and desktop devices.
+Using Github pages with the corresponding path we are able to visualize the HTML on browsers.
 Using Git and Github we save all the changes we make on the documents.
 
 By Julieta Lara Balcaza.
