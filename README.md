@@ -14,18 +14,20 @@ About Gigatech Software Solutions SA:
 
 Gigatech Software Solutions SA, provides software development services to other companies.
 
-### Week 01
+### Week 00
 First we created Trackgenix app interfaces and prototypes with Figma, with its different roles and functionalities.
-Then we created the HTML structure of this landing page.
+
+### Week 01
+This week we created the HTML structure of the landing page that we made on Figma.
 Using Git and Github we create a repository and control the different versions of our HTML document each time that we make changes on it.
 
 ### Week 02
-During this week we included the styles corresponding to the HTML structure to ensure that when viewing the page, 
-it looks identical to the landing of the screenflow made with Figma.
+During this week we included the styles corresponding to the HTML structure to ensure that, when viewing the page, 
+it looks identical to the landing made with Figma.
 Using Git and Github we save all the changes we make on the documents.
 
 ### Week 03
-This week we applied Flexbox Layout model to the HTML structure, trying to copy the styles of the landing page that we did with Figma, but also taking into account different breakpoints to display it correctly on mobile, tablet and desktop devices.
+This week we applied Flexbox Layout model to the HTML structure, trying to copy the styles of the landing page, but also taking into account different breakpoints to display it correctly on mobile, tablet and desktop devices.
 Using Github pages with the corresponding path we are able to visualize the HTML on browsers.
 Using Git and Github we save all the changes we make on the documents.
 
