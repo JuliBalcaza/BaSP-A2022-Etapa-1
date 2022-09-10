@@ -1,22 +1,118 @@
 body{
     font-family: "roboto";
 }
-
+h1{
+    width: 199px;
+    height: 47px;
+    left: 205px;
+    top: 170px;
+    margin: 25% 0 0 22px;
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 47px;
+}
+h2{
+    margin:5% 0 0 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+}
+h3{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000000;
+}
+h3:hover{
+    color: #F13312;
+    transition: 250ms;
+}
+h4{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+h4:hover{
+    color: #F13312;
+    transition: 250ms;
+}
+h5{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #373867;
+}
+a{
+    text-decoration: none;
+}
+/*.line{
+    width: 1176px;
+    height: 10px;
+    left: 209px;
+    top: 177px;
+    margin-left: 207px;
+    margin-right: 57px;
+    margin-bottom: 83px;
+    background-color: #D9D9D9;
+}*/
+.clear{
+    clear: both;
+}
     /* mobile */
-@media (min-width:480px) {
+@media (min-width:481px) {
     body{
         background-color: #49A37B;
-    }   
+    }
+    body header{
+        background-image: none;
+    }
+    main #who-we-are p:last-of-type{
+        color: #FFFFFF;
+    }
+    main #why-choose-us {
+        background-color: #FFFFFF;
+    }
+    main article img{
+        display: none;
+    }
 }
 /* tablet */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     body{
         background-color: #49A37B;
+    }
+    body header{
+        background-image: none;
+        color: #FFFFFF;
+    }
+    #rectangle-container{
+        margin-left: 10%;
+    }
+    main #who-we-are p:last-of-type{
+        color: #FFFFFF;
+    }
+    main #why-choose-us {
+        background-color: #FFFFFF;
     }
 }
 /* desktop */
 @media (min-width: 1024px) {
     body{
         background-color: #FFFFFF;
-    } 
-} 
+    }
+    body header{
+        background-image: url(/semana-02/assets/images/principal-page.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    body header #rectangle-container{
+        margin-left: 20%;
+    }
+    main article img{
+        display: flex;
+    }
+}

@@ -1,1 +1,97 @@
-/*Who whe are section*/
+#who-we-are{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+#who-we-are p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+#who-we-are p{
+    color: #373867;
+    margin-bottom: 15px;
+}
+#who-we-are p:last-of-type{
+    color: #49A37B;
+}
+/*why choose us section*/
+#why-choose-us{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*
+
+.left-article p{
+    float: left;
+    width: 650px;
+    height: 284px;
+    margin-left: 162px;
+    margin-bottom: 220px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+.right-img{ 
+    position: absolute;
+    margin-top: 220px;
+    margin-right: 45px;
+    margin-bottom: 220px;
+    margin-left: 70px;
+}
+.right-article{
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+}
+.right-article h3{
+    float: right;
+    width: 529px;
+    height: 53px;
+    margin-top: 247px;
+    margin-right: 64px;
+    margin-bottom: 64px;
+}
+.secondary-line-right{
+    position: relative;
+    left: 732px;
+    top: 300px;
+    width: 676px;
+    height: 4px;
+    background: #FFFFFF;
+}
+.right-article p{
+    float: right;
+    width: 530px;
+    height: 330px;
+    margin-right: 62px;
+    margin-bottom: 146px;
+    margin-left: 878px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+.left-img{
+    position: absolute;
+    margin-top: 220px;
+    margin-right: 146px;
+    margin-bottom: 220px;
+    margin-left: 162px;
+}
+#first-img{
+    margin-top: 163px;
+}
+#leader-title{
+    margin-top: 247px;
+}
+#leader-line{
+    position: relative;
+    width: 780px;
+    height: 4px;
+    left: 162px;
+    top: 300px;
+    background: #D9D9D9;
+}

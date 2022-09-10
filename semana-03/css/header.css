@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 100%;
+}
+#rectangle-container{
+    left: 183px;
+    width: 481px;
+    margin: auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+#header-line{
+    width: 452px;
+    height: 2px;
+    margin-left: 22px;
+    background-color:  #AACE9B;
+}
+#rectangle-container h2{
+    width: 314px;
+    height: 23px;
+    margin: 17px 0 0 22px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+#rectangle-container p{
+    width: 366px;
+    margin: 15% 0 0 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.75);
+}
