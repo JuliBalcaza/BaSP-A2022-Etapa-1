@@ -24,6 +24,15 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+#why-choose-us article{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#why-choose-us article h3, p{
+    padding: 2%;
+}
 /*
 
 .left-article p{
@@ -95,3 +104,146 @@
     top: 300px;
     background: #D9D9D9;
 }
+
+/*functionalities*/
+#functionalities h3{
+    text-align: center;
+    margin:auto;
+}
+#functionalities h4{
+    text-align: center;
+    color: #49A37B;
+}
+#functionalities article p{
+    display:flex;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+
+}
+#functionalities article svg{
+    width: 100%;
+    align-items:center;
+}
+/*icons*/
+svg:hover rect{
+    stroke: #F13312;
+}
+svg:hover circle{
+    stroke: #F13312;
+
+}
+svg:hover line{
+    stroke: #F13312;
+}
+svg:hover path{
+    stroke: #F13312;
+}
+#cash:hover{
+    fill:#F13312;
+}
+/*contact*/ 
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2%;
+    color: #373867;
+}
+form p{
+    text-align: center;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+#contact-message textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-family: "roboto";
+}
+#contact-message ::placeholder{
+    font-size: 13px;
+    color: #373867;
+    opacity: 0.5;
+}
+#contact-area {
+    width: 100%;
+    margin: 2% 0;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid #373867;
+    border-radius: 4px;
+}
+/*buttons*/
+button{
+    width: 100%;
+    height: 5%;
+    padding: 12px 20px;
+    margin: 2% 0;
+    background: #AACE9B;
+    border-radius: 5px;
+    border-color: #AACE9B;
+    /*font*/
+    text-align: center;
+    font-size: 15px;
+    color: #373867;
+}
+button:hover{
+    background-color: #373867;
+    color: #FFFFFF;
+}
+/*
+    width: 117px;
+    height: 48px;
+    padding: 12px 20px;
+    margin-top: 16px;
+    margin-bottom: 54px;
+    margin-left: 735px;
+    background: #F13312;
+    border-radius: 5px;
+    border-color:  #F13312;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #373867;
+    #reset:hover{
+    background-color: #AACE9B;
+}
+}*/
+/*final-section*/
+.final-section{
+    background-image: url(/semana-03/assets/images/list-picture.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #373867;
+}
+.final-section article{
+    display: inline-block;
+    margin-top: 63px;
+}
+.final-section article h5{
+    margin-bottom: 25px;
+}
+.final-section article ol li{
+    list-style:decimal;
+}
+#products{
+    margin-bottom: 74px;
+    margin-left: 474px;
+}
+#enterprise{
+    margin-left: 137px;
+}
+#support{
+    margin-left: 137px;
+}
+
+

@@ -21,7 +21,7 @@ h2{
 }
 h3{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2em;
     line-height: 47px;
     color: #000000;
 }
@@ -62,7 +62,7 @@ a{
     clear: both;
 }
     /* mobile */
-@media (min-width:481px) {
+@media (min-width:480px) {
     body{
         background-color: #49A37B;
     }
@@ -78,9 +78,12 @@ a{
     main article img{
         display: none;
     }
+    main #functionalities {
+        background-color: #D9D9D9;
+    }
 }
 /* tablet */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     body{
         background-color: #49A37B;
     }
@@ -96,6 +99,16 @@ a{
     }
     main #why-choose-us {
         background-color: #FFFFFF;
+    }
+    main #functionalities article{
+        display:inline-block;
+        margin: 2%;
+        width: 45%;
+    }
+    main #functionalities article h4{
+    }
+    main #functionalities article svg{
+        display: none;
     }
 }
 /* desktop */
@@ -114,5 +127,8 @@ a{
     }
     main article img{
         display: flex;
+    }
+    main #functionalities {
+        background-color:#FFFFFF;
     }
 }
