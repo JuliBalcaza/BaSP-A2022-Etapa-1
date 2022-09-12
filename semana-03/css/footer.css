@@ -1,8 +1,9 @@
 footer{ 
     background-color:  #AACE9B;;
 }
-#social-media ul li{
-    display: inline-block;
+#social-media ul{
+    display: flex;
+    justify-content: space-between;
     padding: 5%;
 }
 #social-media ul li a{

@@ -84,12 +84,11 @@ a{
 }
 /* tablet */
 @media (min-width: 768px) {
-    body{
-        background-color: #49A37B;
-    }
     body header{
-        background-image: none;
-        color: #FFFFFF;
+        background-image: url(/semana-02/assets/images/principal-page.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     #rectangle-container{
         margin-left: 10%;
@@ -104,11 +103,6 @@ a{
         display:inline-block;
         margin: 2%;
         width: 45%;
-    }
-    main #functionalities article h4{
-    }
-    main #functionalities article svg{
-        display: none;
     }
 }
 /* desktop */
@@ -125,10 +119,29 @@ a{
     body header #rectangle-container{
         margin-left: 20%;
     }
+    main #who-we-are p:last-of-type{
+        color: #49A37B;
+    }
     main article img{
         display: flex;
     }
-    main #functionalities {
-        background-color:#FFFFFF;
+    main #functionalities{
+        background-color:#FFFFFF;     
     }
-}
+    main #functionalities article{
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+    main #functionalities article div{
+        display: flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+    }
+    main #functionalities article h4{
+    }
+    main #functionalities article{
+       
+    }
+    main #functionalities article svg{
+    }

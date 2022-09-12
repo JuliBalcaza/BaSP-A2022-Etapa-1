@@ -7,7 +7,6 @@
     width: 80%;
     margin: auto;
     text-align: center;
-    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
 }
@@ -15,11 +14,21 @@
     color: #373867;
     margin-bottom: 15px;
 }
-#who-we-are p:last-of-type{
-    color: #49A37B;
-}
 /*why choose us section*/
-#why-choose-us{
+.left-article h3{
+    color: #F13312;
+}
+.left-article{
+    display: flex;
+    align-items: center;
+    background-color:#373867;
+}
+.right-article {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+/*#why-choose-us{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -32,7 +41,7 @@
 }
 #why-choose-us article h3, p{
     padding: 2%;
-}
+}*/
 /*
 
 .left-article p{
@@ -123,7 +132,6 @@
 }
 #functionalities article svg{
     width: 100%;
-    align-items:center;
 }
 /*icons*/
 svg:hover rect{
