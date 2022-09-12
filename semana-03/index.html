@@ -34,6 +34,9 @@
                 </p>
             </div>
         </header>
+        <div id="burguer-menu">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
         <aside>
             <div id="side-bar-logo">
                 <img id="radium-logo" src="./assets/logo/logo-rr.png" alt="trackgenix-logo">
@@ -261,25 +264,25 @@
                     <div class="form-container">
                         <label><p>Name</p></label>
                         <input type="text" name="name" placeholder="Your Name Here">
-                    </div>
-                    <div class="form-container">
-                        <label><p>Email</p> </label>
-                        <input type="email" name="email" placeholder="Your Email Here">
-                    </div>
-                    <div>
-                        <select name="select-area" id="contact-area">
+                        <select class="form-container" id="contact-area">
                             <option value="" disabled selected hidden>Contact area</option>
                             <option value="human-resources">Human Resources</option>
                             <option value="systems">Systems</option>
                             <option value="commercialization">Commercialization</option>
                         </select>
                     </div>
+                    <div class="form-container">
+                        <label><p>Email</p> </label>
+                        <input type="email" name="email" placeholder="Your Email Here">
+                    </div>
                     <div id="contact-message">
                         <label><p>Message</p></label>
                         <textarea name="text" id="text-message" cols="50" rows="6" placeholder="Your Message Here"></textarea>
                     </div>
-                    <button type="submit"><i class="fa-regular fa-envelope"></i> Send Message</button>
-                    <button type="reset"><i class="fa-solid fa-xmark"></i> Reset</button>
+                    <div id="contact-buttons">
+                        <button type="submit" name="submit"><i class="fa-regular fa-envelope"></i> Send Message</button>
+                        <button type="reset" id="reset"><i class="fa-solid fa-xmark"></i> Reset</button>
+                    </div>
                 </form>
                 <div class="clear"></div>
             </section>

@@ -21,12 +21,14 @@
 .left-article{
     display: flex;
     align-items: center;
-    background-color:#373867;
+    height: 480px;
 }
 .right-article {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    height: 480px;
+    background-color: #D9D9D9;
 }
 /*#why-choose-us{
     display: flex;
@@ -189,8 +191,8 @@ form p{
     border-radius: 4px;
 }
 /*buttons*/
-button{
-    width: 100%;
+button{ 
+    
     height: 5%;
     padding: 12px 20px;
     margin: 2% 0;
@@ -202,7 +204,19 @@ button{
     font-size: 15px;
     color: #373867;
 }
+#reset{
+    background: #F13312;
+    border-color:#F13312;
+}
+#contact-buttons{
+    display: flex;  
+    justify-content: space-between;
+}
 button:hover{
+    background-color: #373867;
+    color: #FFFFFF;
+}
+#reset:hover{
     background-color: #373867;
     color: #FFFFFF;
 }

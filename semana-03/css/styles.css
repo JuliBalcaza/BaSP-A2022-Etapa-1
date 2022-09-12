@@ -78,7 +78,7 @@ a{
     main article img{
         display: none;
     }
-    main #functionalities {
+    main #functionalities{
         background-color: #D9D9D9;
     }
 }
@@ -137,11 +137,29 @@ a{
         flex-direction:column;
         justify-content:space-between;
     }
+    /*contact*/
+    #contact form {
+    margin-left: 15%;
     }
-    main #functionalities article h4{
+    #contact form .form-container{
+        display:flex;
+        align-items: center;
+        }
+    #contact form .form-container input{
+        margin: 2%;;
     }
-    main #functionalities article{
-       
+    #contact .form-container input[name=email]{
+        width: 46%;
     }
-    main #functionalities article svg{
     }
+/*contact .form-container{
+        display: flex;
+        max-width: 30%;
+        flex-direction: column;
+        margin-top: 2%;
+        margin-left: 15%;
+        background-color: #F13312;
+    }
+    #contact .form-container input{
+        
+    }*/
