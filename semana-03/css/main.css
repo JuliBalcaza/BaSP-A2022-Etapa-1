@@ -21,13 +21,11 @@
 .left-article{
     display: flex;
     align-items: center;
-    height: 480px;
 }
 .right-article {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    height: 480px;
     background-color: #D9D9D9;
 }
 /*#why-choose-us{
@@ -162,6 +160,7 @@ form{
 }
 form p{
     text-align: center;
+    padding-bottom: 15px;
 }
 .form-container input {
     width: 100%;
@@ -169,6 +168,10 @@ form p{
     box-sizing: border-box;
     border: 1px solid #373867;
     border-radius: 4px;
+}
+#contact-message p{
+    text-align: left;
+    padding-bottom: 25px;
 }
 #contact-message textarea{
     width: 100%;
