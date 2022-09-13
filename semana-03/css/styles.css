@@ -190,8 +190,14 @@ a{
     main article{
        display: flex;
     }
+    main article div{
+        display: flex;
+        flex-direction: column;
+    }
     main article img{
         display: flex;
+        height: fit-content;
+        width: 50%;
     }
     main #why-choose-us article{
         height: 840px;
