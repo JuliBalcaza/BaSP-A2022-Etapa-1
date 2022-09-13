@@ -15,105 +15,15 @@
     margin-bottom: 15px;
 }
 /*why choose us section*/
-.left-article h3{
-    color: #F13312;
-}
 .left-article{
     display: flex;
     align-items: center;
 }
-.right-article {
+.right-article{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    background-color: #D9D9D9;
 }
-/*#why-choose-us{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-#why-choose-us article{
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-#why-choose-us article h3, p{
-    padding: 2%;
-}*/
-/*
-
-.left-article p{
-    float: left;
-    width: 650px;
-    height: 284px;
-    margin-left: 162px;
-    margin-bottom: 220px;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
-}
-.right-img{ 
-    position: absolute;
-    margin-top: 220px;
-    margin-right: 45px;
-    margin-bottom: 220px;
-    margin-left: 70px;
-}
-.right-article{
-    box-sizing: border-box;
-    background-color: #D9D9D9;
-}
-.right-article h3{
-    float: right;
-    width: 529px;
-    height: 53px;
-    margin-top: 247px;
-    margin-right: 64px;
-    margin-bottom: 64px;
-}
-.secondary-line-right{
-    position: relative;
-    left: 732px;
-    top: 300px;
-    width: 676px;
-    height: 4px;
-    background: #FFFFFF;
-}
-.right-article p{
-    float: right;
-    width: 530px;
-    height: 330px;
-    margin-right: 62px;
-    margin-bottom: 146px;
-    margin-left: 878px;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
-}
-.left-img{
-    position: absolute;
-    margin-top: 220px;
-    margin-right: 146px;
-    margin-bottom: 220px;
-    margin-left: 162px;
-}
-#first-img{
-    margin-top: 163px;
-}
-#leader-title{
-    margin-top: 247px;
-}
-#leader-line{
-    position: relative;
-    width: 780px;
-    height: 4px;
-    left: 162px;
-    top: 300px;
-    background: #D9D9D9;
-}
-
 /*functionalities*/
 #functionalities h3{
     text-align: center;
@@ -121,19 +31,16 @@
 }
 #functionalities h4{
     text-align: center;
-    color: #49A37B;
 }
 #functionalities article p{
     display:flex;
     margin: auto;
     width: 80%;
     text-align: justify;
-
 }
 #functionalities article svg{
     width: 100%;
 }
-/*icons*/
 svg:hover rect{
     stroke: #F13312;
 }
@@ -193,16 +100,13 @@ form p{
     border: 1px solid #373867;
     border-radius: 4px;
 }
-/*buttons*/
 button{ 
-    
     height: 5%;
     padding: 12px 20px;
     margin: 2% 0;
     background: #AACE9B;
     border-radius: 5px;
     border-color: #AACE9B;
-    /*font*/
     text-align: center;
     font-size: 15px;
     color: #373867;
@@ -223,25 +127,6 @@ button:hover{
     background-color: #373867;
     color: #FFFFFF;
 }
-/*
-    width: 117px;
-    height: 48px;
-    padding: 12px 20px;
-    margin-top: 16px;
-    margin-bottom: 54px;
-    margin-left: 735px;
-    background: #F13312;
-    border-radius: 5px;
-    border-color:  #F13312;
-    text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    color: #373867;
-    #reset:hover{
-    background-color: #AACE9B;
-}
-}*/
 /*final-section*/
 #final-section{
     display: flex;

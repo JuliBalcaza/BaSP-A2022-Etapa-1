@@ -1,9 +1,6 @@
 aside{
-    position: fixed; 
     width: 152px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
+    height: 100vh;
     background: #FFFFFF;
     color: #F13312;
 }
@@ -12,7 +9,7 @@ nav{
 }
 nav ul{   
     margin-left: 30px;
-    text-align:left;
+    text-align: left;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -47,11 +44,10 @@ nav ul li:hover{
 #side-bar-contact{
     margin-top: 100px;
 }
-#side-bar-contact h3{
+#side-bar-contact p{
     margin-bottom: 20px;
     margin-left: 15px;
     text-decoration: underline 1px;
-    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: #F13312; 
@@ -62,9 +58,17 @@ nav ul li:hover{
     font-size: 10px;
     line-height: 12px;
 }
+#hamburguer-menu{
+    padding: 25px;
+}
  /* mobile phones and tablets */
 @media screen and (max-width: 1023px){
     aside{
         display: none;
+    }
+}
+@media screen and (min-width: 1024px){
+    header #hamburguer-menu{
+    display: none;
     }
 }

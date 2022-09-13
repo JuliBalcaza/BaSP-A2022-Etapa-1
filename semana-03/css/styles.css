@@ -64,6 +64,19 @@ a{
     }
     main #why-choose-us {
         background-color: #FFFFFF;
+        padding-bottom: 25px;
+    }
+    main #why-choose-us article{
+        margin: 0 10%;
+        padding: 0 2%;
+        background-color: #FFFFFF;
+    }
+    main #why-choose-us article h3{
+        font-size: 28px;
+        padding: 5px 0;
+    }
+    main #functionalities h3{
+        padding: 50px 0;
     }
     main article img{
         display: none;
@@ -80,14 +93,28 @@ a{
         background-repeat: no-repeat;
         background-size: cover;
     }
+    body #hamburguer-menu{
+        color: #FFFFFF;
+    }
     #rectangle-container{
         margin-left: 10%;
     }
     main #who-we-are p:last-of-type{
         color: #FFFFFF;
     }
-    main #why-choose-us {
+    main #why-choose-us article{
+      margin: 0 2%;
+      background-color: #FFFFFF;
+    }
+    main #why-choose-us article h3{
+        font-size: 28px;
+        padding: 5px 0;
+    }
+    main #functionalities{
         background-color: #FFFFFF;
+    }
+    main #functionalities h3{
+        padding: 50px 0;
     }
     main #functionalities article{
         display:inline-block;
@@ -100,6 +127,21 @@ a{
     body{
         background-color: #FFFFFF;
     }
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+    .wrap-inner {
+        margin: 0%;
+        overflow-y: auto;
+    }
+    aside {
+        flex: 1 0 10%;
+    }
+    .wrapper {
+        display: flex;
+        height: 100%;
+    }   
     body header{
         background-image: url(/semana-02/assets/images/principal-page.png);
         background-position: center;
@@ -108,9 +150,6 @@ a{
     }
     body header #rectangle-container{
         margin-left: 20%;
-    }
-    body > footer, main{
-        margin-left: 10%;
     }
     .line{
         width: 90%;
@@ -122,7 +161,7 @@ a{
     .secondary-line-left{
         width: 780px;
         height: 4px;
-       margin-left: 15%;
+        margin-left: 15%;
         background: #286276;
     }
     .secondary-line-right{
@@ -133,6 +172,27 @@ a{
     main #who-we-are p:last-of-type{
         color: #49A37B;
     }
+    main .choose-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0%;
+    }
+    main #why-choose-us article div > p, h3{
+        max-width: 60%;
+        margin: 5% 15%;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    main #why-choose-us article h3{
+        font-size: 40px;
+    }
+    main #why-choose-us .right-article{
+        background-color: #D9D9D9;
+        margin: 0%;
+    }
+    main article{
+       display: flex;
+    }
     main article img{
         display: flex;
     }
@@ -140,7 +200,6 @@ a{
         height: 840px;
     }
     main #functionalities{
-        max-width: 90%;
         background-color:#FFFFFF;     
     }
     main #functionalities article{
@@ -153,9 +212,6 @@ a{
         justify-content:space-between;
     }
     /*contact*/
-    #contact form {
-
-    }
     #contact form .form-container{
         display:flex;
         align-items: center;
@@ -166,15 +222,9 @@ a{
     #contact .form-container input[name=email]{
         width: 46%;
     }
-    }
-/*contact .form-container{
+    #final-section article{
         display: flex;
-        max-width: 30%;
-        flex-direction: column;
-        margin-top: 2%;
-        margin-left: 15%;
-        background-color: #F13312;
+       flex-direction: column;
+        padding: auto;
     }
-    #contact .form-container input{
-        
-    }*/
+}
