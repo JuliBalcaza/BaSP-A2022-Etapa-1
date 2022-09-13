@@ -7,10 +7,10 @@ header{
     height: 100%;
 }
 #rectangle-container{
-    left: 183px;
     width: 481px;
-    margin: auto;
     height: 100%;
+    left: 183px;
+    margin: auto;
     background-color: rgba(0, 0, 0, 0.3);
     font-weight: 400;
     font-size: 16px;

@@ -35,8 +35,7 @@ nav ul li:hover{
     color: #373867;
 }
 #radium-logo{
-    margin-top: 10px;
-    margin-left: 30px;
+    margin: 10px 0 0 30px;
 }
 #side-bar-logo span{
     margin-left: 20px;
@@ -45,23 +44,22 @@ nav ul li:hover{
     margin-top: 100px;
 }
 #side-bar-contact p{
-    margin-bottom: 20px;
-    margin-left: 15px;
+    margin: 0 0 20px 15px;
     text-decoration: underline 1px;
     font-size: 14px;
+    font-weight: 500;
     line-height: 16px;
     color: #F13312; 
 }
 #side-bar-contact ul li{
     padding: 15px;
-    font-weight: 500;
     font-size: 10px;
     line-height: 12px;
 }
 #hamburguer-menu{
     padding: 25px;
 }
- /* mobile phones and tablets */
+ /* hide bars */
 @media screen and (max-width: 1023px){
     aside{
         display: none;
@@ -69,6 +67,6 @@ nav ul li:hover{
 }
 @media screen and (min-width: 1024px){
     header #hamburguer-menu{
-    display: none;
+        display: none;
     }
 }

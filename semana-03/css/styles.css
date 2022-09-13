@@ -4,24 +4,19 @@ body{
 h1{
     width: 199px;
     height: 47px;
-    left: 205px;
-    top: 170px;
     margin: 25% 0 0 22px;
-    font-weight: 700px;
     font-size: 40px;
     line-height: 47px;
 }
 h2{
     margin:5% 0 0 0;
     text-align: center;
-    font-weight: 700;
     font-size: 40px;
     line-height: 47px;
     color: #000000;
 }
 h3{
-    font-weight: 700;
-    font-size: 2em;
+    font-size: 32px;
     line-height: 47px;
     color: #000000;
 }
@@ -30,7 +25,6 @@ h3:hover{
     transition: 250ms;
 }
 h4{
-    font-weight: 700;
     font-size: 30px;
     line-height: 35px;
     color: #000000;
@@ -40,16 +34,12 @@ h4:hover{
     transition: 250ms;
 }
 h5{
-    font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     color: #373867;
 }
 a{
     text-decoration: none;
-}
-.clear{
-    clear: both;
 }
     /* mobile */
 @media (min-width:480px) {
@@ -63,8 +53,8 @@ a{
         color: #FFFFFF;
     }
     main #why-choose-us {
-        background-color: #FFFFFF;
         padding-bottom: 25px;
+        background-color: #FFFFFF;
     }
     main #why-choose-us article{
         margin: 0 10%;
@@ -72,8 +62,8 @@ a{
         background-color: #FFFFFF;
     }
     main #why-choose-us article h3{
-        font-size: 28px;
         padding: 5px 0;
+        font-size: 28px;
     }
     main #functionalities h3{
         padding: 50px 0;
@@ -96,6 +86,10 @@ a{
     body #hamburguer-menu{
         color: #FFFFFF;
     }
+    h3{
+        font-size: 42px;
+        font-weight: 500;
+    }
     #rectangle-container{
         margin-left: 10%;
     }
@@ -107,7 +101,6 @@ a{
       background-color: #FFFFFF;
     }
     main #why-choose-us article h3{
-        font-size: 28px;
         padding: 5px 0;
     }
     main #functionalities{
@@ -132,8 +125,9 @@ a{
         height: 100vh;
     }
     .wrap-inner {
-        margin: 0%;
         overflow-y: auto;
+        margin: 0%;
+        box-sizing: border-box;
     }
     aside {
         flex: 1 0 10%;
@@ -150,6 +144,9 @@ a{
     }
     body header #rectangle-container{
         margin-left: 20%;
+    }
+    body > h1, h2, h3, h4, h5{
+        font-weight: 700;
     }
     .line{
         width: 90%;
@@ -173,9 +170,9 @@ a{
         color: #49A37B;
     }
     main .choose-container{
-        display: flex;
-        flex-wrap: wrap;
+        flex: 1 1 auto;
         margin: 0%;
+        width: 100%;
     }
     main #why-choose-us article div > p, h3{
         max-width: 60%;
@@ -184,7 +181,7 @@ a{
         line-height: 35px;
     }
     main #why-choose-us article h3{
-        font-size: 40px;
+        font-size: 42px;
     }
     main #why-choose-us .right-article{
         background-color: #D9D9D9;
@@ -198,6 +195,9 @@ a{
     }
     main #why-choose-us article{
         height: 840px;
+    }
+    main #functionalities h3{
+        font-size: 42px;
     }
     main #functionalities{
         background-color:#FFFFFF;     
@@ -215,7 +215,7 @@ a{
     #contact form .form-container{
         display:flex;
         align-items: center;
-        }
+    }
     #contact form .form-container input{
         margin: 2%;
     }
@@ -224,7 +224,7 @@ a{
     }
     #final-section article{
         display: flex;
-       flex-direction: column;
+        flex-direction: column;
         padding: auto;
     }
 }

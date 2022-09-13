@@ -34,8 +34,8 @@
 }
 #functionalities article p{
     display:flex;
-    margin: auto;
     width: 80%;
+    margin: auto;
     text-align: justify;
 }
 #functionalities article svg{
@@ -66,8 +66,8 @@ form{
     color: #373867;
 }
 form p{
-    text-align: center;
     padding-bottom: 15px;
+    text-align: center;
 }
 .form-container input {
     width: 100%;
@@ -77,8 +77,8 @@ form p{
     border-radius: 4px;
 }
 #contact-message p{
-    text-align: left;
     padding-bottom: 25px;
+    text-align: left;
 }
 #contact-message textarea{
     width: 100%;
@@ -102,8 +102,8 @@ form p{
 }
 button{ 
     height: 5%;
-    padding: 12px 20px;
     margin: 2% 0;
+    padding: 12px 20px;
     background: #AACE9B;
     border-radius: 5px;
     border-color: #AACE9B;
