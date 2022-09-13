@@ -12,6 +12,7 @@ header{
     left: 183px;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
