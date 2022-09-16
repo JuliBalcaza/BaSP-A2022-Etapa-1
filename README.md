@@ -29,6 +29,12 @@ Using Git and Github we save all the changes we make on the documents.
 ### Week 03
 This week we applied Flexbox Layout model to the HTML structure, taking into account different breakpoints to display it correctly on mobile, tablet and desktop devices.
 Using Github pages with the corresponding path we are able to visualize the HTML on browsers.
-Using Git and Github we save all the changes we make on the documents.
+Site:
+https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-03/index
+
+### Week 04
+During this week we started to perform JavaScript exercises linking the .js documents to our index.html to be able to display them correctly on the browser.
+Site: 
+https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-04/index
 
 By Julieta Lara Balcaza.
