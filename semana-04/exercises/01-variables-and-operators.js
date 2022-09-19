@@ -10,7 +10,7 @@ console.log(resultA);
 el resultado en una 3er variable.*/
 console.log('1.b:');
 var firstStringB= 'hello';
-var secondStringB= ' world';
+var secondStringB= 'world';
 var resultB= firstStringB + secondStringB;
 console.log(resultB);
 /*c. Crear dos variables de tipo String y sumar el largo de 
