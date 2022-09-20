@@ -63,13 +63,24 @@ form{
     color: #373867;
 }
 
+form div > label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #373867;
+}
+
 .form-container input {
     width: 100%;
+    margin-top: 5%;
     box-sizing: border-box;
     padding: 15px 12px;
-    margin: 15px 0;
     border: 1px solid #373867;
     border-radius: 4px;
+}
+
+.form-container select{
+    margin-top: 5%;
 }
 
 .contact-message textarea{
@@ -89,7 +100,6 @@ form{
 
 .form-container select {
     width: 100%;
-    margin: 2% 0;
     padding: 15px 12px;
     box-sizing: border-box;
     border: 1px solid #373867;
@@ -97,7 +107,7 @@ form{
 }
 
 .contact-message textarea{
-    border: 1px solid black;
+    border: 1px solid #373867;
 }
 
 button{
@@ -115,11 +125,6 @@ button{
 .contact-buttons{
     display: flex;
     flex-direction: column;
-}
-
-button [name="reset"]{
-    background-color: #373867;
-    color: #FFFFFF;
 }
 
 button[name=reset]{
@@ -220,37 +225,21 @@ button:hover{
     #functionalities h3{
         padding: 50px 0;
     }
-    #contact label{
-        flex-direction: column;
-    }
 
-   .form-container{
-        display:flex;
-        align-items: center;
-        margin: auto;
-        width: 90%;
-    }
-    .form-container select{
-        margin-left: 1%;
-    }
-
-    .contact-message{
+    .contact-flex{
         display: flex;
-        flex-direction: column;
-        width: 90%;
-        text-align: center;
-        align-self: center;
+        flex-wrap: wrap;
     }
 
-    .contact-message textarea{
-        border: 1px solid black;
+    .contact-flex > div{
+        flex-direction: column;
+        width: 50%;
     }
 
     .contact-buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
         margin: auto;
     }
 
@@ -286,6 +275,7 @@ button:hover{
     #why-choose-us .right-article img{
         margin-right: 0;
     }
+
     .choose-container{
         flex: 1 1 auto;
         margin: 0%;
@@ -324,26 +314,20 @@ button:hover{
         font-size: 40px;
     }
 
-    .form-container{
-        display:flex;
-        align-items: center;
-        margin: auto;
-        width: 90%;
+    .contact-flex{
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .contact-message{
-        display: flex;
+    .contact-flex > div{
         flex-direction: column;
-        width: 90%;
-        text-align: center;
-        align-self: center;
+        width: 50%;
     }
 
     .contact-buttons{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 90%;
         margin: auto;
     }
 
