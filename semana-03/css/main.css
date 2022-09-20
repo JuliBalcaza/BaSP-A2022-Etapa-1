@@ -255,7 +255,6 @@ button:hover{
 /*desktop*/
 
 @media (min-width: 1024px) {
-
     #why-choose-us article img{
         margin: 2%;
     }

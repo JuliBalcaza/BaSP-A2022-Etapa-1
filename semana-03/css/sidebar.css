@@ -23,8 +23,6 @@ aside{
     }
 }
 
-
-
 @media screen and (min-width: 1024px){
     aside {
         display: flex;
