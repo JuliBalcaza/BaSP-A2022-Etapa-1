@@ -1,18 +1,22 @@
 body{
     font-family: "roboto";
 }
-h1{
-    width: 199px;
-    height: 47px;
-    margin: 25% 0 0 22px;
+header{
+    background-image: url(/assets/images/principal-page.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1, h2{
     font-size: 40px;
     line-height: 47px;
+}
+h1{
+    margin: 25% 0 0 22px;
 }
 h2{
     margin:5% 0 0 0;
     text-align: center;
-    font-size: 40px;
-    line-height: 47px;
     color: #000000;
 }
 h3{
@@ -20,18 +24,10 @@ h3{
     line-height: 47px;
     color: #000000;
 }
-h3:hover{
-    color: #F13312;
-    transition: 250ms;
-}
 h4{
     font-size: 30px;
     line-height: 35px;
     color: #000000;
-}
-h4:hover{
-    color: #F13312;
-    transition: 250ms;
 }
 h5{
     font-size: 20px;
@@ -41,13 +37,18 @@ h5{
 a{
     text-decoration: none;
 }
+h3:hover{
+    color: #F13312;
+    transition: 250ms;
+}
+h4:hover{
+    color: #F13312;
+    transition: 250ms;
+}
     /* mobile */
 @media (min-width:480px) {
-    body{
-        background-color: #49A37B;
-    }
-    body header{
-        background-image: none;
+    aside{
+        display: none;
     }
     main #who-we-are p:last-of-type{
         color: #FFFFFF;
@@ -76,12 +77,9 @@ a{
     }
 }
 /* tablet */
-@media (min-width: 768px) {
-    body header{
-        background-image: url(/semana-02/assets/images/principal-page.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+@media (min-width: 1023px) {
+    aside{
+        display: none;
     }
     body #hamburguer-menu{
         color: #FFFFFF;
@@ -117,6 +115,9 @@ a{
 }
 /* desktop */
 @media (min-width: 1024px) {
+    aside{
+        display:block;
+    }
     body{
         background-color: #FFFFFF;
     }
@@ -136,12 +137,7 @@ a{
         display: flex;
         height: 100%;
     }   
-    body header{
-        background-image: url(/semana-02/assets/images/principal-page.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+
     body header #rectangle-container{
         margin-left: 20%;
     }
@@ -227,6 +223,10 @@ a{
     }
     #contact .form-container input[name=email]{
         width: 46%;
+    }
+    button[name=reset]{
+        background-color: #F13312;
+        border: solid #F13312;
     }
     #final-section article{
         display: flex;

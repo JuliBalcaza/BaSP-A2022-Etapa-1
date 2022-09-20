@@ -1,12 +1,17 @@
 aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 152px;
     height: 100vh;
     background: #FFFFFF;
     color: #F13312;
 }
+
 nav{
     margin-top: 30px;
 }
+
 nav ul{   
     margin-left: 30px;
     text-align: left;
@@ -14,63 +19,68 @@ nav ul{
     font-size: 15px;
     line-height: 18px;
 }
+
 nav ul li{
     padding: 30px 0px;
 }
+
 nav ul a{
     color: #F13312;
 }
-nav ul li a:hover{
+
+nav ul li:hover, a:hover{
     color: #373867;
-}
-nav ul li:hover{
     transform: scale(1.1);
 }
+
 #side-bar-logo{
     padding-bottom: 15px;
     background: rgba(55, 56, 103, 0.4);
-    font-weight:400px;
     font-size: 20px;
     line-height: 23.44px;
     color: #373867;
 }
+
 #radium-logo{
     margin: 10px 0 0 30px;
 }
+
 #side-bar-logo span{
     margin-left: 20px;
 }
+
 #side-bar-contact{
     margin-top: 100px;
 }
+
 #side-bar-contact p{
     margin: 0 0 20px 15px;
     text-decoration: underline 1px;
     font-size: 14px;
-    font-weight: 500;
     line-height: 16px;
     color: #F13312; 
 }
+
 #side-bar-contact ul li{
     padding: 15px;
     font-size: 10px;
     line-height: 12px;
 }
+
 #hamburguer-menu{
     padding: 25px;
     font-size: 28px;
 }
+
 #hamburguer-menu:hover{
     color: #F13312;
 }
- /* hide bars */
-@media screen and (max-width: 1023px){
-    aside{
-        display: none;
-    }
-}
+
 @media screen and (min-width: 1024px){
-    header #hamburguer-menu{
+    aside{
+        display:block;
+    }
+    #hamburguer-menu{
         display: none;
     }
 }
