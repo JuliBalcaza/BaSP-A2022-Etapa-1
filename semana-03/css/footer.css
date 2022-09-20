@@ -1,18 +1,22 @@
-footer{ 
+footer{
     background-color:  #AACE9B;;
 }
+
 #social-media ul{
     display: flex;
     justify-content: space-between;
     padding: 5%;
 }
+
 #social-media ul li a{
     color: #FFFFFF;
 }
+
 #social-media a:hover{
     color: #F13312;
     transition: 250ms;
 }
+
 #address-copy p{
     padding-bottom: 27px;
     text-align: center;

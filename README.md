@@ -6,7 +6,7 @@ For now, this is the Landing page with its different sections.
 
 How to open:
 ```
-1- access to folder "Semana-03" inside "BaSP-A2022-Etapa-1"
+1- access to the corresponding week's folder inside "BaSP-A2022-Etapa-1"
 2- open file "index.html" on your browser.
 ```
 
@@ -22,7 +22,7 @@ This week we created the HTML structure of the landing page that we made on Figm
 Using Git and Github we create a repository and control the different versions of our HTML document each time that we make changes on it.
 
 ### Week 02
-During this week we included the styles corresponding to the HTML structure to ensure that, when viewing the page, 
+During this week we included the styles corresponding to the HTML structure to ensure that, when viewing the page,
 it looks identical to the landing made with Figma.
 Using Git and Github we save all the changes we make on the documents.
 
@@ -34,7 +34,7 @@ https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-03/index
 
 ### Week 04
 During this week we started to perform JavaScript exercises linking the .js documents to our index.html to be able to display them correctly on the browser.
-Site: 
+Site:
 https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-04/index
 
 By Julieta Lara Balcaza.

@@ -9,17 +9,20 @@ header{
     background-size: cover;
 }
 
+body > h1, h2, h3, h4, h5{
+    font-weight: 700;
+}
+
 h1, h2{
     font-size: 40px;
     line-height: 47px;
 }
 
 h1{
-    margin: 25% 0 0 15%;
+    margin: 10% 0 0 15%;
 }
 
 h2{
-    margin:15%;
     text-align: center;
     color: #000000;
 }
@@ -72,13 +75,9 @@ h4:hover{
         margin: 0%;
         box-sizing: border-box;
     }
-    
+
     #rectangle-container{
         margin-left: 20%;
-    }
-
-    body > h1, h2, h3, h4, h5{
-        font-weight: 700;
     }
 
     .line{
