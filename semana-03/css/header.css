@@ -7,7 +7,6 @@ header{
 
 #rectangle-container{
     flex: 1 0 10%;
-    /*width: 481px;*/
     height: 100%;
     left: 183px;
     margin: auto;
@@ -26,8 +25,7 @@ header{
 }
 
 #rectangle-container h2{
-    /*width: 314px;*/
-    /*margin: 17px 22px;*/
+    margin: 17px 22px;
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
@@ -43,10 +41,6 @@ header{
 @media (min-width: 480px){
     #rectangle-container{
         width: 481px;
-    }
-    #rectangle-container h2{
-        width: 314px;
-        margin: 17px 22px;
     }
 }
 

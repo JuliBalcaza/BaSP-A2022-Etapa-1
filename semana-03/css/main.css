@@ -13,6 +13,7 @@
     color: #373867;
     margin-bottom: 15px;
 }
+
 #who-we-are p:last-of-type{
     color: #49A37B;
 }
@@ -37,7 +38,6 @@
     width: 95%;
     height: fit-content;
     margin-left: 2.5%;
-    
 }
 
 #functionalities h3{
@@ -68,7 +68,6 @@ form{
     box-sizing: border-box;
     padding: 15px 12px;
     margin: 15px 0;
-
     border: 1px solid #373867;
     border-radius: 4px;
 }
@@ -95,6 +94,10 @@ form{
     box-sizing: border-box;
     border: 1px solid #373867;
     border-radius: 4px;
+}
+
+#contact-message textarea{
+    border: 1px solid black;
 }
 
 button{ 
@@ -136,9 +139,11 @@ button[name=reset]{
     background-size: cover;
     color: #373867;
 }
+
 #final-section article{
     min-width: 25%;
 }
+
 #final-section ol li{
     list-style: decimal;
 }
@@ -215,6 +220,9 @@ button:hover{
     #functionalities h3{
         padding: 50px 0;
     }
+    #contact label{
+        flex-direction: column;
+    }
 
    .form-container{
         display:flex;
@@ -253,15 +261,16 @@ button:hover{
         margin: auto;
         padding: 5%;
     }
-
 }
+
+/*desktop*/
+
 @media (min-width: 1024px) {
-    body {
-        background-color: #49A37B;
-    }
+
     #why-choose-us article img{
         margin: 2%;
     }
+    
     .left-article{
     display: flex;
     align-items: center;
@@ -312,7 +321,7 @@ button:hover{
     }
 
     #functionalities h3{
-        padding: 50px 0;
+        font-size: 40px;
     }
 
     .form-container{
@@ -321,7 +330,7 @@ button:hover{
         margin: auto;
         width: 90%;
     }
-    
+
     .form-container select{
         margin-left: 1%;
     }
@@ -332,10 +341,6 @@ button:hover{
         width: 90%;
         text-align: center;
         align-self: center;
-    }
-
-    #contact-message textarea{
-        border: 1px solid black;
     }
 
     #contact-buttons{
