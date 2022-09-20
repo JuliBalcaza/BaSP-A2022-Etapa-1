@@ -1,126 +1,64 @@
 body{
     font-family: "roboto";
 }
+
 header{
     background-image: url(/assets/images/principal-page.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 h1, h2{
     font-size: 40px;
     line-height: 47px;
 }
+
 h1{
     margin: 25% 0 0 22px;
 }
+
 h2{
     margin:5% 0 0 0;
     text-align: center;
     color: #000000;
 }
+
 h3{
     font-size: 32px;
     line-height: 47px;
+    text-align: center;
     color: #000000;
 }
+
 h4{
     font-size: 30px;
     line-height: 35px;
+    text-align: center;
     color: #000000;
 }
+
 h5{
     font-size: 20px;
     line-height: 23px;
     color: #373867;
 }
+
 a{
     text-decoration: none;
 }
+
 h3:hover{
     color: #F13312;
     transition: 250ms;
 }
+
 h4:hover{
     color: #F13312;
     transition: 250ms;
 }
-    /* mobile */
-@media (min-width:480px) {
-    aside{
-        display: none;
-    }
-    main #who-we-are p:last-of-type{
-        color: #FFFFFF;
-    }
-    main #why-choose-us {
-        padding-bottom: 25px;
-        background-color: #FFFFFF;
-    }
-    main #why-choose-us article{
-        margin: 0 10%;
-        padding: 0 2%;
-        background-color: #FFFFFF;
-    }
-    main #why-choose-us article h3{
-        padding: 5px 0;
-        font-size: 28px;
-    }
-    main #functionalities h3{
-        padding: 50px 0;
-    }
-    main article img{
-        display: none;
-    }
-    main #functionalities{
-        background-color: #D9D9D9;
-    }
-}
-/* tablet */
-@media (min-width: 1023px) {
-    aside{
-        display: none;
-    }
-    body #hamburguer-menu{
-        color: #FFFFFF;
-    }
-    h3{
-        font-size: 42px;
-        font-weight: 500;
-    }
-    #rectangle-container{
-        margin-left: 10%;
-    }
-    main #who-we-are p:last-of-type{
-        color: #FFFFFF;
-    }
-    main #why-choose-us article{
-      margin: 0 2%;
-      background-color: #FFFFFF;
-    }
-    main #why-choose-us article h3{
-        padding: 5px 0;
-    }
-    main #functionalities{
-        background-color: #FFFFFF;
-    }
-    main #functionalities h3{
-        padding: 50px 0;
-    }
-    main #functionalities article{
-        display:inline-block;
-        margin: 2%;
-        width: 45%;
-    }
-}
 /* desktop */
-@media (min-width: 1024px) {
-    aside{
-        display:block;
-    }
-    body{
-        background-color: #FFFFFF;
-    }
+@media (min-width: 1024px){
     body {
         overflow: hidden;
         height: 100vh;
@@ -130,9 +68,7 @@ h4:hover{
         margin: 0%;
         box-sizing: border-box;
     }
-    aside {
-        flex: 1 0 10%;
-    }
+  
     .wrapper {
         display: flex;
         height: 100%;
@@ -152,85 +88,14 @@ h4:hover{
         background-color: #D9D9D9;
     }
     .secondary-line-left{
-        width: 780px;
+        width: 90%;
         height: 4px;
         margin-left: 15%;
         background: #286276;
     }
     .secondary-line-right{
-        width: 676px;
+        width: 90%;
         height: 4px;
         background: #FFFFFF;
-    }
-    main #who-we-are p:last-of-type{
-        color: #49A37B;
-    }
-    main .choose-container{
-        flex: 1 1 auto;
-        margin: 0%;
-        width: 100%;
-    }
-    main #why-choose-us article div > p, h3{
-        max-width: 60%;
-        margin: 5% 15%;
-        font-size: 30px;
-        line-height: 35px;
-    }
-    main #why-choose-us article h3{
-        font-size: 42px;
-    }
-    main #why-choose-us .right-article{
-        background-color: #D9D9D9;
-        margin: 0%;
-    }
-    main article{
-       display: flex;
-    }
-    main article div{
-        display: flex;
-        flex-direction: column;
-    }
-    main article img{
-        display: flex;
-        height: fit-content;
-        width: 50%;
-    }
-    main #why-choose-us article{
-        height: 840px;
-    }
-    main #functionalities h3{
-        font-size: 42px;
-    }
-    main #functionalities{
-        background-color:#FFFFFF;     
-    }
-    main #functionalities article{
-        display: inline-flex;
-        flex-direction: row-reverse;
-    }
-    main #functionalities article div{
-        display: flex;
-        flex-direction:column;
-        justify-content:space-between;
-    }
-    /*contact*/
-    #contact form .form-container{
-        display:flex;
-        align-items: center;
-    }
-    #contact form .form-container input{
-        margin: 2%;
-    }
-    #contact .form-container input[name=email]{
-        width: 46%;
-    }
-    button[name=reset]{
-        background-color: #F13312;
-        border: solid #F13312;
-    }
-    #final-section article{
-        display: flex;
-        flex-direction: column;
-        padding: auto;
     }
 }
