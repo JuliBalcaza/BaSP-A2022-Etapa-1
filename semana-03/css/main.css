@@ -133,7 +133,7 @@ button[name=reset]{
     margin: auto;
     flex-wrap: wrap;
     padding: 5% 0;
-    background-image: url(/assets/images/list-picture.png);
+    background-image: url(../assets/images/list-picture.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
