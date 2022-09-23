@@ -38,6 +38,8 @@ Site:
 https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-04/index
 
 ### Week 05
-This week we added the sign up and log in files to our work by linking them to the index file, plus added JavaScript functionality.
+This week we added the sign up and log in files to our work by linking them to the index file, plus added functionalities with JavaScript.
+Site:
+https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-05/views/index
 
 By Julieta Lara Balcaza.
