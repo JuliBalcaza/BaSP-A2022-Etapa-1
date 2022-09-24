@@ -1,0 +1,54 @@
+header {
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+main img{
+   display: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    padding: 15% 0;
+    color: #373867;
+}
+
+form input{
+    width: 80%;
+    margin: 2% 0;
+    color: #373867;
+}
+
+form button{
+    width: 83%;
+    color: #ffff;
+    margin: 2% 0;
+    padding: 2%;
+    background: #AACE9B;
+    border-radius: 5px;
+    border-color: #AACE9B;
+    text-align: center;
+    font-size: 15px;
+}
+
+form button:hover{
+    background-color: #373867;
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width: 768px){
+    main img{
+        display: flex;
+        width: 30%;
+        height: fit-content;
+    }
+}

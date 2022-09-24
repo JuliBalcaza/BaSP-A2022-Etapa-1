@@ -27,7 +27,7 @@ aside{
     aside {
         display: flex;
         flex-direction: column;
-        flex: 1 0 10%;
+        flex: 0 0 10%;
         justify-content: space-between;
     }
 
@@ -61,7 +61,7 @@ aside{
     }
 
     nav ul li{
-        padding: 15% 0;
+        padding: 15px 0;
     }
 
     nav ul a{

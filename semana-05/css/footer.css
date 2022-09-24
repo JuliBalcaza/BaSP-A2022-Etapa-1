@@ -1,11 +1,11 @@
 footer{
-    background-color:  #AACE9B;;
+    background-color:  #AACE9B;
 }
 
 #social-media ul{
     display: flex;
     justify-content: space-between;
-    padding: 5%;
+    padding: 2%;
 }
 
 #social-media ul li a{
@@ -18,6 +18,5 @@ footer{
 }
 
 #address-copy p{
-    padding-bottom: 27px;
     text-align: center;
 }
