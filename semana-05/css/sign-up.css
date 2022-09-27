@@ -2,3 +2,8 @@
     border: 5px solid red;
     border-radius: 2px;
 }
+
+.input-success{
+    border: 5px solid green;
+    border-radius: 2px;
+}
