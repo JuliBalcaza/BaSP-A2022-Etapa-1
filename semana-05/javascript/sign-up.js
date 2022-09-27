@@ -13,7 +13,7 @@ window.onload = function (){
     var repeatPasswordField = document.getElementById('input-repeat');
     var btnCreate = document.getElementById('create-button');
 
-    //taking p elements form the dom//
+    //taking p elements from the dom//
     var pElementName= document.getElementById('element-p-name');
     var pElementSurname= document.getElementById('element-p-surname');
     var pElementIdentity= document.getElementById('element-p-id');
@@ -25,6 +25,146 @@ window.onload = function (){
     var pElementEmail= document.getElementById('element-p-email');
     var pElementPassword= document.getElementById('element-p-password');
     var pElementRepeat= document.getElementById('element-p-repeat');
+
+    //creating variables to compare boolean values//
+    var nameValue= false;
+    var surnameValue= false;
+    var identityValue= false;
+    var dateValue= false;
+    var phoneValue= false;
+    var addressValue= false;
+    var localityValue= false;
+    var zipValue= false;
+    var emailValue= false;
+    var passwordValue= false;
+    var repeatValue= false;
+
+    //functions to set//
+    function nameT(){
+        nameValue= true;
+    }
+
+    function nameF(){
+        nameValue= false;
+    }
+
+    function surnameT(){
+        surnameValue= true;
+    }
+
+    function surnameF(){
+        surnameValue= false;
+    }
+
+    function identityT(){
+        identityValue= true;
+    }
+
+    function identityF(){
+        identityValue= false;
+    }
+
+    function dateT(){
+        dateValue= true;
+    }
+
+    function dateF(){
+        dateValue= false;
+    }
+
+    function phoneT(){
+        phoneValue= true;
+    }
+
+    function phoneF(){
+        phoneValue= false;
+    }
+
+    function addressT(){
+        addressValue= true;
+    }
+
+    function addressF(){
+        addressValue= false;
+    }
+
+    function localityT(){
+        localityValue= true;
+    }
+
+    function localityF(){
+        localityValue= false;
+    }
+
+    function zipT(){
+        zipValue= true;
+    }
+
+    function zipF(){
+        zipValue= false;
+    }
+
+    function emailT(){
+        emailValue= true;
+    }
+
+    function emailF(){
+        emailValue= false;
+    }
+
+    function passwordT(){
+        passwordValue= true;
+    }
+
+    function passwordF(){
+        passwordValue= false;
+    }
+
+    function repeatT(){
+        repeatValue= true;
+    }
+
+    function repeatF(){
+        repeatValue= false;
+    }
+/*
+    // functions to set error messages
+    function nameErrorSet(a) {
+        nameError = a;
+    }
+    function lastNameErrorSet(a) {
+        lastNameError = a;
+    }
+    function IDErrorSet(a) {
+        IDError = a;
+    }
+    function dateOfBirthErrorSet(a) {
+        dateOfBirthError = a;
+    }
+    function phoneNumberErrorSet(a) {
+        phoneNumberError = a;
+    }
+    function addressErrorSet(a) {
+        addressError = a;
+    }
+    function localityErrorSet(a) {
+        localityError = a;
+    }
+    function postalCodeErrorSet(a) {
+        postalCodeError = a;
+    }
+    function emailErrorSet(a) {
+        emailError = a;
+    }
+    function passwordErrorSet(a) {
+        passwordError = a;
+    }
+    function confirmPasswordErrorSet(a) {
+        confirmPasswordError = a;
+    }
+*/
+
+
 
     //declaring error messages//
     var errorName= 'You must add your name';
@@ -39,7 +179,7 @@ window.onload = function (){
     var errorPassword= 'You must add a password';
     var errorRepeat= 'You must repeat the password';
 
-    //creating p elements//
+    //creating p variables//
     var namePara= document.createElement('p');
     var surnamePara= document.createElement('p');
     var identityPara= document.createElement('p');
@@ -186,8 +326,10 @@ window.onload = function (){
     function validateAddressHasNumber(addressField){
         var blankSpace = addressField.value.indexOf(" ");
         var numberAddress = addressField.value.substring(blankSpace +1, addressField.value.length);
-        if (validateNumbersAddress.test(numberAddress)){
+        if (validateNumbersAddress(numberAddress)){
+            console.log('tiene numero');
             return true;
+            
         } else {
             return false;
         }
@@ -284,23 +426,29 @@ window.onload = function (){
         }
     }
 
+    //ONBLUR//
+
     //adding onblur name//
     nameField.onblur = function validateInputName(){
         if(empty(nameField)){
             nameField.classList.add('input-error');
+            nameF();
         }else if(!validateLettersName(nameField)){
             nameField.classList.add('input-error');
             pElementName.appendChild(namePara);
             namePara.classList.add('paragraph-error');
             namePara.innerHTML = 'This field must contain 3 letters or more'
+            nameF();
         }else if(validateNumbersName(nameField)){
             nameField.classList.add('input-error');
             pElementName.appendChild(namePara);
             namePara.classList.add('paragraph-error');
             namePara.innerHTML = 'This field only accepts letters';
+            nameF();
         }
         else{
             nameField.classList.add('input-success');
+            nameT();
         }
     }
 
@@ -308,19 +456,23 @@ window.onload = function (){
     surnameField.onblur = function validateInputSurname(){
         if(empty(surnameField)){
             surnameField.classList.add('input-error');
+            surnameF();
         }else if(!validateLettersSurname(surnameField)){
             surnameField.classList.add('input-error');
             pElementSurname.appendChild(surnamePara);
             surnamePara.classList.add('paragraph-error');
             surnamePara.innerHTML = 'This field must contain 3 letters or more'
+            surnameF();
         }else if(validateNumbersSurname(surnameField)){
             surnameField.classList.add('input-error');
             pElementSurname.appendChild(surnamePara);
             surnamePara.classList.add('paragraph-error');
             surnamePara.innerHTML = 'This field only accepts letters';
+            surnameF();
         }
         else{
             surnameField.classList.add('input-success');
+            surnameT();
         }
     }
 
@@ -328,13 +480,16 @@ window.onload = function (){
     identityField.onblur = function validateInputIdentity(){
         if(empty(identityField)){
             identityField.classList.add('input-error');
+            identityF();
         }else if(!validateNumbersIdentity(identityField)){
             identityField.classList.add('input-error');
             pElementIdentity.appendChild(identityPara);
             identityPara.classList.add('paragraph-error');
             identityPara.innerHTML = 'This field must contain only numbers, 7 or more'
+            identityF();
         }else{
             identityField.classList.add('input-success');
+            identityT();
         }
     }
 
@@ -342,13 +497,16 @@ window.onload = function (){
     dateField.onblur = function validateInputDate(){
         if(empty(dateField)){
             dateField.classList.add('input-error');
+            dateF();
         }else if(validateYearsDate(dateField)){
             dateField.classList.add('input-error');
             pElementDate.appendChild(datePara);
             datePara.classList.add('paragraph-error');
-            datePara.innerHTML = 'Yoy must be 18 or older'
+            datePara.innerHTML = 'You must be 18 or older';
+            dateF();
         }else{
             dateField.classList.add('input-success');
+            dateT();
         }
     }
 
@@ -356,13 +514,16 @@ window.onload = function (){
     phoneField.onblur = function validateInputPhone(){
         if(empty(phoneField)){
             phoneField.classList.add('input-error');
+            phoneF();
         }else if(!validateNumbersPhone(phoneField)){
             phoneField.classList.add('input-error');
             pElementPhone.appendChild(phonePara);
             phonePara.classList.add('paragraph-error');
-            phonePara.innerHTML = 'This field must contain only numbers, 10 or more'
+            phonePara.innerHTML = 'This field must contain only 10 numbers'
+            phoneF();
         }else{
             phoneField.classList.add('input-success');
+            phoneT();
         }
     }
 
@@ -370,28 +531,34 @@ window.onload = function (){
     addressField.onblur = function validateInputAddress(){
         if(empty(addressField)){
             addressField.classList.add('input-error');
+            addressF();
         }else if(validateAddressFirstLetter(addressField)){
             addressField.classList.add('input-error');
             pElementAddress.appendChild(addressPara);
             addressPara.classList.add('paragraph-error');
             addressPara.innerHTML = 'Your address must start with a letter';
+            addressF();
         }else if(!validateSpace(addressField)){
             addressField.classList.add('input-error');
             pElementAddress.appendChild(addressPara);
             addressPara.classList.add('paragraph-error');
             addressPara.innerHTML = 'Your address must contain a blank space';
+            addressF();
         }else if(!validateAddressHasNumber(addressField)){
             addressField.classList.add('input-error');
             pElementAddress.appendChild(addressPara);
             addressPara.classList.add('paragraph-error');
             addressPara.innerHTML = 'Your address must contain numbers after blank space';
+            addressF();
         }else if(!validateLengthAddress) {
             addressField.classList.add('input-error');
             pElementAddress.appendChild(addressPara);
             addressPara.classList.add('paragraph-error');
             addressPara.innerHTML = 'Your address must have 5 characters or more';
+            addressF();
         }else{
             addressField.classList.add('input-success');
+            addressT();
         }
     }
 
@@ -399,19 +566,23 @@ window.onload = function (){
     localityField.onblur = function validateInputLocality(){
         if(empty(localityField)){
             localityField.classList.add('input-error');
+            localityF();
         }else if(!validateLettersLocality(localityField)){
             localityField.classList.add('input-error');
             pElementLocality.appendChild(localityPara);
             localityPara.classList.add('paragraph-error');
             localityPara.innerHTML = 'This field must contain 3 letters or more'
+            localityF();
         }else if(validateNumbersLocality(localityField)){
             localityField.classList.add('input-error');
             pElementLocality.appendChild(localityPara);
             localityPara.classList.add('paragraph-error');
             localityPara.innerHTML = 'This field only accepts letters';
+            localityF();
         }
         else{
             localityField.classList.add('input-success');
+            localityT();
         }
     }
 
@@ -419,13 +590,16 @@ window.onload = function (){
     zipCodeField.onblur = function validateInputZip(){
         if(empty(zipCodeField)){
             zipCodeField.classList.add('input-error');
+            zipF();
         }else if(!validateNumberZip(zipCodeField)){
             zipCodeField.classList.add('input-error');
             pElementZip.appendChild(zipPara);
             zipPara.classList.add('paragraph-error');
             zipPara.innerHTML = 'This field must contain only numbers'
+            zipF();
         }else{
             zipCodeField.classList.add('input-success');
+            zipT();
         }
     }
 
@@ -433,13 +607,16 @@ window.onload = function (){
     emailField.onblur = function validateInputEmail(){
         if(empty(emailField)){
             emailField.classList.add('input-error');
+            emailF();
         }else if(!validateEmail(emailField)){
             emailField.classList.add('input-error');
             pElementEmail.appendChild(emailPara);
             emailPara.classList.add('paragraph-error');
             emailPara.innerHTML = 'Enter a valid e-mail address';
+            emailF();
         }else{
             emailField.classList.add('input-success');
+            emailT();
         }
     }
 
@@ -447,18 +624,22 @@ window.onload = function (){
     passwordField.onblur = function validateInputPassword(){
         if(empty(passwordField)){
             passwordField.classList.add('input-error');
+            passwordF();
         }else if(!validateNumberPassword(passwordField) || !validateLettersPassword(passwordField)){
             passwordField.classList.add('input-error');
             pElementPassword.appendChild(passwordPara);
             passwordPara.classList.add('paragraph-error');
             passwordPara.innerHTML = 'Your password must contain letters and numbers';
+            passwordF();
         }else if(!validateLengthPassword(passwordField)){
             passwordField.classList.add('input-error');
             pElementPassword.appendChild(passwordPara);
             passwordPara.classList.add('paragraph-error');
             passwordPara.innerHTML = 'Your password must contain 8 characters or more';
+            passwordF();
         }else{
             passwordField.classList.add('input-success');
+            passwordT();
         }
     }
 
@@ -466,15 +647,104 @@ window.onload = function (){
     repeatPasswordField.onblur = function validateInputRepeat(){
         if(empty(repeatPasswordField)){
             repeatPasswordField.classList.add('input-error');
+            repeatF();
         }else if(!validateRepeatPassword(passwordField, repeatPasswordField)){
             repeatPasswordField.classList.add('input-error');
             pElementRepeat.appendChild(repeatPara);
             repeatPara.classList.add('paragraph-error');
             repeatPara.innerHTML = 'Please make sure your passwords match';
+            repeatF();
         }else{
             repeatPasswordField.classList.add('input-success');
+            repeatT();
         }
     }
+
     //ONFOCUS//
+    nameField.onfocus = function(){
+        nameField.classList.remove('input-error', 'input-success');
+        namePara.innerHTML = '';
+    }
+
+    surnameField.onfocus = function(){
+        surnameField.classList.remove('input-error', 'input-success');
+        surnamePara.innerHTML = '';
+    }
+
+    identityField.onfocus = function(){
+        identityField.classList.remove('input-error', 'input-success');
+        identityPara.innerHTML = '';
+    }
+
+    dateField.onfocus = function(){
+        dateField.classList.remove('input-error', 'input-success');
+        datePara.innerHTML = '';
+    }
+
+    phoneField.onfocus = function(){
+        phoneField.classList.remove('input-error', 'input-success');
+        phonePara.innerHTML = '';
+    }
+
+    addressField.onfocus = function(){
+        addressField.classList.remove('input-error', 'input-success');
+        addressPara.innerHTML = '';
+    }
+
+    localityField.onfocus = function(){
+        localityField.classList.remove('input-error', 'input-success');
+        localityPara.innerHTML = '';
+    }
+
+    zipCodeField.onfocus = function(){
+        zipCodeField.classList.remove('input-error', 'input-success');
+        zipPara.innerHTML = '';
+    }
+
+    emailField.onfocus = function(){
+        emailField.classList.remove('input-error', 'input-success');
+        emailPara.innerHTML = '';
+    }
+
+    passwordField.onfocus = function(){
+        passwordField.classList.remove('input-error', 'input-success');
+        passwordPara.innerHTML = '';
+    }
+
+    repeatPasswordField.onfocus = function(){
+        repeatPasswordField.classList.remove('input-error', 'input-success');
+        repeatPara.innerHTML = '';
+    }
+
+    //ALERTS//
+    btnCreate.onclick = function(event){
+        event.preventDefault();
+        if(nameValue &&
+        surnameValue &&
+        identityValue &&
+        dateValue &&
+        phoneValue &&
+        addressValue &&
+        localityValue &&
+        zipValue &&
+        emailValue &&
+        passwordValue &&
+        repeatValue){
+            alert(' Hello! Your Email: ' + emailField.value +
+            '\n' + 'Password: ' + passwordField.value +
+            '\n' + 'Surname: ' + surnameField.value +
+            '\n' + 'ID: ' + identityField.value +
+            '\n' + 'Phone: ' + phoneField.value +
+            '\n' + 'Address: ' + addressField.value +
+            '\n' + 'Locality: ' + localityField.value +
+            '\n' + 'Zip code: ' + zipCodeField.value +
+            '\n' + 'Email: ' + emailField.value +
+            '\n' + 'Password: ' + passwordField.value +
+            '\n' + 'Confirm Password: ' + repeatPasswordField.value);
+        }else{
+            alert('Some field is empty or contains error, please check your information');
+        }
+    }
+
 
 }

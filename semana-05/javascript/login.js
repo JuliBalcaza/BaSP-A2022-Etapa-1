@@ -1,17 +1,16 @@
 window.onload = function (){
-    //taking elements from the dom//
-    var inputField = document.querySelectorAll('input');
+    //taking input elements from the dom//
     var emailField = document.getElementById('email-field');
     var passwordField = document.getElementById('password-field');
     var btnLogin = document.getElementById('login-button');
 
-    //creating error messages//
-    var emailErrorParagraph = document.getElementById('error-p-email');
-    var paragraphEmail = document.createElement('p');
-    var passwordErrorParagraph = document.getElementById('error-p-password');
-    var paragraphPassword = document.createElement('p');
-    emailErrorParagraph.appendChild(paragraphEmail);
-    passwordErrorParagraph.appendChild(paragraphPassword);
+    //taking p elements from the dom//
+    var pElementEmail = document.getElementById('error-p-email');
+    var pElementPassword = document.getElementById('error-p-password');
+
+    //creating p variables//
+    var emailPara= document.createElement('p');
+    var passwordPara= document.createElement('p');
 
     //declaring empty field//
     function empty(inputField) {
@@ -32,20 +31,7 @@ window.onload = function (){
         }
     }
 
-    //validating email field//
-    emailField.onblur = function validateInputEmail(){
-        if(empty(emailField)){
-            emailField.classList.add('input-error');
-        }else if(!validateEmail(emailField)){
-            emailField.classList.add('input-error');
-            paragraphEmail.classList.add('paragraph-error');
-            paragraphEmail.innerHTML = 'Enter a valid e-mail address';
-        }else{
-            emailField.classList.add('input-success');
-        }
-    }
-
-    //validating password//
+    //validating password numbers and letters//
     function validateNumbers(){
         var numbers = (passwordField.value.split(''));
         for(var i=0; i<numbers.length; i++){
@@ -66,30 +52,60 @@ window.onload = function (){
         return false;
     }
 
-    //validating password field//
+    //validating length from password//
+    function validateLengthPassword(passwordField) {
+        if (passwordField.value.length >=8){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    //ONBLUR//
+
+    //adding onblur email//
+    emailField.onblur = function validateInputEmail(){
+        if(empty(emailField)){
+            emailField.classList.add('input-error');
+        }else if(!validateEmail(emailField)){
+            emailField.classList.add('input-error');
+            pElementEmail.appendChild(emailPara);
+            emailPara.classList.add('paragraph-error');
+            emailPara.innerHTML = 'Enter a valid e-mail address';
+        }else{
+            emailField.classList.add('input-success');
+        }
+    }
+
+
+    //adding onblur password//
     passwordField.onblur = function validateInputPassword(){
         if(empty(passwordField)){
             passwordField.classList.add('input-error');
         }else if(!validateNumbers(passwordField) || !validateLetters(passwordField)){
             passwordField.classList.add('input-error');
-            paragraphPassword.classList.add('paragraph-error');
-            paragraphPassword.innerHTML = 'Your password must contain letters and numbers';
+            pElementPassword.appendChild(passwordPara);
+            passwordPara.classList.add('paragraph-error');
+            passwordPara.innerHTML = 'Your password must contain letters and numbers';
+        }else if(!validateLengthPassword(passwordField)){
+            passwordField.classList.add('input-error');
+            pElementPassword.appendChild(passwordPara);
+            passwordPara.classList.add('paragraph-error');
+            passwordPara.innerHTML = 'Your password must contain 8 characters or more';
         }else{
             passwordField.classList.add('input-success');
         }
     }
 
-    //removing error messages//
+    //ONFOCUS//
     emailField.onfocus = function(){
-        emailField.classList.remove('input-error');
-        emailField.classList.remove('input-success');
-        paragraphEmail.innerHTML = '';
+        emailField.classList.remove('input-error', 'input-success');
+        emailPara.innerHTML = '';
     }
 
     passwordField.onfocus = function(){
-        passwordField.classList.remove('input-error');
-        passwordField.classList.remove('input-success');
-        paragraphPassword.innerHTML = '';
+        passwordField.classList.remove('input-error', 'input-success');
+        passwordPara.innerHTML = '';
     }
 
     //alerts//
@@ -100,7 +116,9 @@ window.onload = function (){
         }else if((!validateNumbers(passwordField) || !validateLetters(passwordField))){
             alert('Invalid Password');
         }else{
-            alert('Your Email: ' + emailField.value + '\n' + 'Your Password: ' + passwordField.value + '\n' + 'Confirm?');
+            alert('Your Email: ' + emailField.value +
+            '\n' + 'Your Password: ' + passwordField.value +
+            '\n' + 'Confirm?');
         }
     }
 }
