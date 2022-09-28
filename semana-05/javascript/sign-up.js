@@ -680,17 +680,11 @@ window.onload = function (){
     //ALERTS//
     btnCreate.onclick = function(event){
         event.preventDefault();
-        if(nameValue &&
-        surnameValue &&
-        identityValue &&
-        dateValue &&
-        phoneValue &&
-        addressValue &&
-        localityValue &&
-        zipValue &&
-        emailValue &&
-        passwordValue &&
-        repeatValue){
+        if(nameValue && surnameValue &&
+        identityValue && dateValue &&
+        phoneValue && addressValue &&
+        localityValue && zipValue &&
+        emailValue && passwordValue && repeatValue){
             alert(' Hello!' +
             '\n' + 'Your Email: ' + emailField.value +
             '\n' + 'Password: ' + passwordField.value +
