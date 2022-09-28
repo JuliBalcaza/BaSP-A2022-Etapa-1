@@ -7,3 +7,11 @@
     border: 5px solid green;
     border-radius: 2px;
 }
+
+@media screen and (min-width: 768px){
+    main img{
+        display: flex;
+        width: 30%;
+        height: fit-content;
+    }
+}

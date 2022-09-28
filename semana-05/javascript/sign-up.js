@@ -127,44 +127,6 @@ window.onload = function (){
     function repeatF(){
         repeatValue= false;
     }
-/*
-    // functions to set error messages
-    function nameErrorSet(a) {
-        nameError = a;
-    }
-    function lastNameErrorSet(a) {
-        lastNameError = a;
-    }
-    function IDErrorSet(a) {
-        IDError = a;
-    }
-    function dateOfBirthErrorSet(a) {
-        dateOfBirthError = a;
-    }
-    function phoneNumberErrorSet(a) {
-        phoneNumberError = a;
-    }
-    function addressErrorSet(a) {
-        addressError = a;
-    }
-    function localityErrorSet(a) {
-        localityError = a;
-    }
-    function postalCodeErrorSet(a) {
-        postalCodeError = a;
-    }
-    function emailErrorSet(a) {
-        emailError = a;
-    }
-    function passwordErrorSet(a) {
-        passwordError = a;
-    }
-    function confirmPasswordErrorSet(a) {
-        confirmPasswordError = a;
-    }
-*/
-
-
 
     //declaring error messages//
     var errorName= 'You must add your name';
@@ -329,11 +291,11 @@ window.onload = function (){
         if (validateNumbersAddress(numberAddress)){
             console.log('tiene numero');
             return true;
-            
         } else {
             return false;
         }
     }
+
     //length address
     function validateLengthAddress(addressField) {
         if (addressField.value.length >=5){
@@ -427,7 +389,6 @@ window.onload = function (){
     }
 
     //ONBLUR//
-
     //adding onblur name//
     nameField.onblur = function validateInputName(){
         if(empty(nameField)){
@@ -730,7 +691,8 @@ window.onload = function (){
         emailValue &&
         passwordValue &&
         repeatValue){
-            alert(' Hello! Your Email: ' + emailField.value +
+            alert(' Hello!' +
+            '\n' + 'Your Email: ' + emailField.value +
             '\n' + 'Password: ' + passwordField.value +
             '\n' + 'Surname: ' + surnameField.value +
             '\n' + 'ID: ' + identityField.value +
@@ -745,6 +707,4 @@ window.onload = function (){
             alert('Some field is empty or contains error, please check your information');
         }
     }
-
-
 }
