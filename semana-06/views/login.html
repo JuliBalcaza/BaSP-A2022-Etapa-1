@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="web app to record and track hours worked by employees and projects">
+        <meta name="keywords" content="tracking, app, work, employee, company, project, software, solutions">
+        <script src="https://kit.fontawesome.com/bec91a9a13.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <script src="../javascript/login.js"></script>
+        <title>Trackgenix</title>
+    </head>
+    <body>
+        <aside>
+            <div class="side-bar-logo">
+                <img class="radium-logo" src="../assets/logo/logo-rr.png" alt="trackgenix-logo">
+                <span>
+                    Trackgenix
+                    <img class="vector-logo" src="../assets/logo/vector-closed.png" alt="vector">
+                </span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../views/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="../views/sign-up.html"><i class="fa-solid fa-user"></i> Sign Up</a></li>
+                    <li><a href="../views/login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></li>
+                </ul>
+            </nav>
+            <section>
+                <p>Contact Us:</p>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i> trackgenix@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> (000) 000-0000</li>
+                    <li><i class="fa-solid fa-location-dot">
+                    </i> 1234 Somewhere Road #8254 - Nashville,TN 00000-0000</li>
+                </ul>
+            </section>
+        </aside>
+        <div class="wrap-inner">
+            <i id="hamburguer-menu" class="fa-sharp fa-solid fa-bars fa-2x1"></i>
+            <header>
+                <h2>Welcome!</h2>
+                <p>Please, enter your details</p>
+            </header>
+            <main>
+                <form>
+                    <div class="input-container">
+                        <label>Email</label>
+                        <input type="text" class="input" id="email-field">
+                        <p id="error-p-email"></p>
+                    </div>
+                    <div class="input-container">
+                        <label>Password</label>
+                        <input type="text" class="input" id="password-field">
+                        <p id="error-p-password"></p>
+                    </div>
+                    <a href="#">Forgot your password?</a>
+                    <button type="submit" id="login-button">Login</button>
+                </form>
+                <img src="../assets/images/login-image.png" alt="work group">
+            </main>
+            <footer>
+                <section id="social-media">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                    </ul>
+                </section>
+                <section id="address-copy">
+                    <p>
+                        Rosario, Argentina.
+                    </p>
+                    <p>
+                        Copyright © 2022 Radium Rocket. All rights reserved
+                    </p>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

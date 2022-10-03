@@ -1,0 +1,95 @@
+aside{
+    display: none;
+}
+
+  #hamburguer-menu{
+        position: fixed;
+        z-index: 1;
+        padding: 5px;
+        margin: 2.5%;
+        font-size: 28px;
+        color: #286276;
+        border: solid 3px #286276;
+        border-radius: 5px;
+    }
+
+    #hamburguer-menu:hover{
+        color: #F13312;
+    }
+
+@media (min-width: 480px){
+    aside{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    aside {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 10%;
+        justify-content: space-between;
+    }
+
+    aside{
+        width: 152px;
+        height: 100vh;
+        background: #FFFFFF;
+        color: #F13312;
+    }
+
+    aside section p{
+        margin: 0 0 20px 15px;
+        text-decoration: underline 1px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #F13312;
+    }
+
+    aside section ul li{
+        padding: 15px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    nav ul{
+        margin-left: 30px;
+        text-align: left;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    nav ul li{
+        padding: 15px 0;
+    }
+
+    nav ul a{
+        color: #F13312;
+    }
+
+    nav ul li:hover, a:hover{
+        color: #373867;
+        transform: scale(1.1);
+    }
+
+    #hamburguer-menu{
+        display: none;
+    }
+
+    .side-bar-logo{
+        padding-bottom: 15px;
+        background: rgba(55, 56, 103, 0.4);
+        font-size: 20px;
+        line-height: 23.44px;
+        color: #373867;
+    }
+
+    .radium-logo{
+        margin: 10px 0 0 30px;
+    }
+
+    .side-bar-logo span{
+        margin-left: 5%;
+    }
+}

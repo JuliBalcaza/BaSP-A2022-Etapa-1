@@ -42,4 +42,9 @@ This week we added the sign up and log in files to our work by linking them to t
 Site:
 https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-05/views/index
 
+### Week 06
+In this week we extend the forms from the previous week by sending the data loaded in them to a web server through an HTTP request using the Fetch method from JavaScript.
+Site:
+https://julibalcaza.github.io/BaSP-A2022-Etapa-1/semana-06/views/index
+
 By Julieta Lara Balcaza.
