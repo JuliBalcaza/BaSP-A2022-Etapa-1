@@ -8,7 +8,7 @@ window.onload = function (){
     var pElementEmail = document.getElementById('error-p-email');
     var pElementPassword = document.getElementById('error-p-password');
 
-    //creating p variables//
+    //creating variables//
     var emailPara= document.createElement('p');
     var passwordPara= document.createElement('p');
 
@@ -31,6 +31,28 @@ window.onload = function (){
 
     function passwordF(){
         passwordValue= false;
+    }
+
+    //requesting server//
+    function requestServer(){
+        var urlLogin = 'https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + emailField.value + '&password=' + passwordField.value;
+        fetch(urlLogin)
+        .then(function(res){
+            return res.json();
+        })
+
+        .then(function(data){
+            if(data.success){
+                alert('Hello ' + emailField.value + 'Request '+ data.msg);
+            }else{
+                alert('Something went wrong: ' + data.msg);
+            }
+        })
+
+        .catch(function(err){
+            alert('Fail ' + err);
+        })
+
     }
 
     //declaring empty field//
@@ -129,14 +151,15 @@ window.onload = function (){
         passwordPara.innerHTML = '';
     }
 
-    //alerts//
+    //login click//
     btnLogin.onclick = function(event){
         event.preventDefault();
         if(emailValue && passwordValue){
-            alert(' Hello!' +
+            alert('Hello!' +
             '\n' + 'Your Email: ' + emailField.value +
             '\n' + 'Your Password: ' + passwordField.value +
             '\n' + 'Welcome!');
+            requestServer();
         }else{
             alert('Some field is empty or contains error, please check your information');
         }

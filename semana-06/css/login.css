@@ -53,12 +53,12 @@ form button:hover{
 }
 
 .input-error{
-    border: 5px solid red;
+    border: 1px solid red;
     border-radius: 2px;
 }
 
 .input-success{
-    border: 5px solid green;
+    border: 1px solid green;
     border-radius: 2px;
 }
 
