@@ -16,8 +16,9 @@ main img{
 form{
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    padding: 5% 0;
+    align-items: center;
+    justify-items: center;
+    padding-top: 10%;
     color: #373867;
 }
 
@@ -34,17 +35,11 @@ form a{
     margin: 2% 0;
 }
 
-.paragraph-error{
-    font-size: 10px;
-    color: red;
-    font-weight: bold;
-    margin: 2% 0;
-}
-
 form button{
-    color: #ffff;
+    width: 100%;
     margin: 2% 0;
     padding: 2%;
+    color: #ffff;
     background: #AACE9B;
     border-radius: 5px;
     border-color: #AACE9B;
@@ -67,11 +62,35 @@ form button:hover{
     border-radius: 2px;
 }
 
+.paragraph-error{
+    font-size: 10px;
+    color: red;
+    font-weight: bold;
+    margin: 2% 0;
+}
 
 @media screen and (min-width: 768px){
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
     main img{
         display: flex;
         width: 30%;
         height: fit-content;
     }
+
+    form{
+        padding-top: 0%;
+        margin-left: 5%;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0%;
+    }
+
 }

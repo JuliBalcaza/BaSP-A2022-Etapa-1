@@ -52,7 +52,28 @@ window.onload = function (){
         }
     }
 
-    //validating password numbers and letters//
+    emailField.onblur = function validateInputEmail(){
+        if(empty(emailField)){
+            emailField.classList.add('input-error');
+            emailF();
+        }else if(!validateEmail(emailField)){
+            emailField.classList.add('input-error');
+            pElementEmail.appendChild(emailPara);
+            emailPara.classList.add('paragraph-error');
+            emailPara.innerHTML = 'Enter a valid e-mail address';
+            emailF();
+        }else{
+            emailField.classList.add('input-success');
+            emailT();
+        }
+    }
+
+    emailField.onfocus = function(){
+        emailField.classList.remove('input-error', 'input-success');
+        emailPara.innerHTML = '';
+    }
+
+    //validating password//
     function validateNumbers(){
         var numbers = (passwordField.value.split(''));
         for(var i=0; i<numbers.length; i++){
@@ -73,7 +94,6 @@ window.onload = function (){
         return false;
     }
 
-    //validating length from password//
     function validateLengthPassword(passwordField) {
         if (passwordField.value.length >=8){
             return true;
@@ -82,27 +102,6 @@ window.onload = function (){
         }
     }
 
-    //ONBLUR//
-
-    //adding onblur email//
-    emailField.onblur = function validateInputEmail(){
-        if(empty(emailField)){
-            emailField.classList.add('input-error');
-            emailF();
-        }else if(!validateEmail(emailField)){
-            emailField.classList.add('input-error');
-            pElementEmail.appendChild(emailPara);
-            emailPara.classList.add('paragraph-error');
-            emailPara.innerHTML = 'Enter a valid e-mail address';
-            emailF();
-        }else{
-            emailField.classList.add('input-success');
-            emailT();
-        }
-    }
-
-
-    //adding onblur password//
     passwordField.onblur = function validateInputPassword(){
         if(empty(passwordField)){
             passwordField.classList.add('input-error');
@@ -125,12 +124,6 @@ window.onload = function (){
         }
     }
 
-    //ONFOCUS//
-    emailField.onfocus = function(){
-        emailField.classList.remove('input-error', 'input-success');
-        emailPara.innerHTML = '';
-    }
-
     passwordField.onfocus = function(){
         passwordField.classList.remove('input-error', 'input-success');
         passwordPara.innerHTML = '';
@@ -139,7 +132,7 @@ window.onload = function (){
     //alerts//
     btnLogin.onclick = function(event){
         event.preventDefault();
-        if(nameValue && passwordValue){
+        if(emailValue && passwordValue){
             alert(' Hello!' +
             '\n' + 'Your Email: ' + emailField.value +
             '\n' + 'Your Password: ' + passwordField.value +
