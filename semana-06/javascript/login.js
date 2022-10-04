@@ -16,23 +16,6 @@ window.onload = function (){
     var emailValue = false;
     var passwordValue = false;
 
-    //functions to set//
-    function emailT(){
-        emailValue= true;
-    }
-
-    function emailF(){
-        emailValue= false;
-    }
-
-    function passwordT(){
-        passwordValue= true;
-    }
-
-    function passwordF(){
-        passwordValue= false;
-    }
-
     //requesting server//
     function requestServer(){
         var urlLogin = 'https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + emailField.value + '&password=' + passwordField.value;
@@ -77,16 +60,14 @@ window.onload = function (){
     emailField.onblur = function validateInputEmail(){
         if(empty(emailField)){
             emailField.classList.add('input-error');
-            emailF();
         }else if(!validateEmail(emailField)){
             emailField.classList.add('input-error');
             pElementEmail.appendChild(emailPara);
             emailPara.classList.add('paragraph-error');
             emailPara.innerHTML = 'Enter a valid e-mail address';
-            emailF();
         }else{
             emailField.classList.add('input-success');
-            emailT();
+            return emailValue = true;
         }
     }
 
@@ -127,22 +108,19 @@ window.onload = function (){
     passwordField.onblur = function validateInputPassword(){
         if(empty(passwordField)){
             passwordField.classList.add('input-error');
-            passwordF();
         }else if(!validateNumbers(passwordField) || !validateLetters(passwordField)){
             passwordField.classList.add('input-error');
             pElementPassword.appendChild(passwordPara);
             passwordPara.classList.add('paragraph-error');
             passwordPara.innerHTML = 'Your password must contain letters and numbers';
-            passwordF();
         }else if(!validateLengthPassword(passwordField)){
             passwordField.classList.add('input-error');
             pElementPassword.appendChild(passwordPara);
             passwordPara.classList.add('paragraph-error');
             passwordPara.innerHTML = 'Your password must contain 8 characters or more';
-            passwordF();
         }else{
             passwordField.classList.add('input-success');
-            passwordT();
+            return passwordValue = true;
         }
     }
 
