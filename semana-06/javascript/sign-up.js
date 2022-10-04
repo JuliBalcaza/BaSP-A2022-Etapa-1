@@ -4,6 +4,7 @@ window.onload = function (){
     var surnameField = document.getElementById('input-surname');
     var identityField = document.getElementById('input-id');
     var dateField = document.getElementById('input-date');
+    var correctDate;
     var phoneField = document.getElementById('input-phone');
     var addressField = document.getElementById('input-address');
     var localityField = document.getElementById('input-locality');
@@ -56,12 +57,12 @@ window.onload = function (){
     function requestServer(){
 		var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?name='
             + nameField.value
-            + '&surname=' + surnameField.value
-            + '&id=' + identityField.value
-            + '&dateBirth=' + dateField.value
+            + '&lastName=' + surnameField.value
+            + '&dni=' + identityField.value
+            + '&dob=' + correctDate
             + '&phone=' + phoneField.value
 			+ '&address=' + addressField.value
-			+ '&locality=' + localityField.value
+			+ '&city=' + localityField.value
 			+ '&zip=' + zipCodeField.value
 			+ '&email=' + emailField.value
 			+ '&password=' + passwordField.value;
@@ -71,9 +72,10 @@ window.onload = function (){
 			return res.json();
 		})
 		.then(function (data){
-            if (data.success){
+            if (data.success === true){
                 setLocalData(data);
-                alert('Your request went successful: '
+                alert('Successful request: '
+                + data.msg
                 + 'Name: ' + data.data.name
                 + 'Surname: ' + data.data.lastName
                 + '\nID: ' + data.data.dni
@@ -107,23 +109,22 @@ window.onload = function (){
 
     //setting data for saving on local storage//
     function setLocalData(data){
-        localStorage.setItem('nameData', data.nameField);
-		localStorage.setItem('surnameData', data.surnameField);
-		localStorage.setItem('idData', data.identityField);
-		localStorage.setItem('dateData', data.dateField);
-		localStorage.setItem('phoneData', data.phoneField);
-		localStorage.setItem('addressData', data.addressField);
-		localStorage.setItem('localityData', data.localityField);
-		localStorage.setItem('zipData', data.zipCodeField);
-		localStorage.setItem('emailData', data.emailField);
-		localStorage.setItem('passwordData', data.passwordField);
+        localStorage.setItem('nameData', data.data.name);
+		localStorage.setItem('surnameData', data.data.lastName);
+		localStorage.setItem('idData', data.data.dni);
+		localStorage.setItem('dateData', data.data.dob);
+		localStorage.setItem('phoneData', data.data.phone);
+		localStorage.setItem('addressData', data.data.address);
+		localStorage.setItem('localityData', data.city);
+		localStorage.setItem('zipData', data.data.zip);
+		localStorage.setItem('emailData', data.data.email);
+		localStorage.setItem('passwordData', data.data.password);
     }
 
     function saveFormLocalData() {
 		nameField.value = localStorage.getItem('nameData');
 		surnameField.value = localStorage.getItem('surnameData');
 		identityField.value = localStorage.getItem('idData');
-		dateField.value = localStorage.getItem('dateData')
 		phoneField.value = localStorage.getItem('phoneData');
 		addressField.value = localStorage.getItem('addressData');
 		localityField.value = localStorage.getItem('localityData');
@@ -288,6 +289,9 @@ window.onload = function (){
             datePara.innerHTML = 'You must be 18 or older';
         }else{
             dateField.classList.add('input-success');
+            var splitDate = dateField.value.split('-');
+            correctDate = splitDate[1] + '/' + splitDate [2] + '/' + splitDate[0];
+            console.log(correctDate);
             return dateValue = true;
         }
     }
