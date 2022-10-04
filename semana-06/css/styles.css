@@ -1,9 +1,9 @@
 body{
-    font-family: "roboto";
+    font-family: 'roboto';
 }
 
 header{
-    background-image: url(/assets/images/principal-page.png);
+    background-image: url(/semana-06/assets/images/principal-page.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,20 +61,23 @@ h4:hover{
     transition: 250ms;
 }
 
+.wrap-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+    margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
 /* desktop */
 
 @media (min-width: 1024px){
     body {
         display: flex;
         overflow: hidden;
-    }
-
-    .wrap-inner {
-        overflow-y: auto;
-        margin: 0%;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100vh;
     }
 
     #rectangle-container{

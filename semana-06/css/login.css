@@ -1,4 +1,11 @@
-header {
+.wrap-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-image: none;
     text-align: center;
 }
 
@@ -70,6 +77,10 @@ form button:hover{
 }
 
 @media screen and (min-width: 768px){
+    header{
+        background-image: none;
+    }
+
     main{
         display: flex;
         flex-direction: row-reverse;
@@ -87,10 +98,4 @@ form button:hover{
         padding-top: 0%;
         margin-left: 5%;
     }
-
-    footer{
-        position: absolute;
-        bottom: 0%;
-    }
-
 }

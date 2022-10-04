@@ -35,7 +35,7 @@ window.onload = function (){
 
     //declaring empty field//
     function empty(inputField) {
-        if(inputField.value === ""){
+        if(inputField.value === ''){
             return true;
         }else{
             return false;
@@ -73,7 +73,6 @@ window.onload = function (){
         return false;
     }
 
-    //validating length from password//
     function validateLengthPassword(passwordField) {
         if (passwordField.value.length >=8){
             return true;

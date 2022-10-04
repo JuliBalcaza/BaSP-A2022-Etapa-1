@@ -156,7 +156,7 @@ window.onload = function (){
 
     //declaring empty field//
     function empty(inputField) {
-        if(inputField.value === ""){
+        if(inputField.value === ''){
             return true;
         }else{
             return false;
@@ -268,7 +268,7 @@ window.onload = function (){
 
     //validating address letters, blank space and numbers//
     function validateAddressFirstLetter(addressField){
-        var blankSpace = addressField.value.indexOf(" ");
+        var blankSpace = addressField.value.indexOf(' ');
         var letterAddress = addressField.value.substring(0, blankSpace);
         if (!validateLettersAddress(letterAddress)){
             return true;
@@ -278,7 +278,7 @@ window.onload = function (){
     }
 
     function validateSpace(addressField){
-        if (addressField.value.indexOf(" ") >= 0){
+        if (addressField.value.indexOf(' ') >= 0){
             return true;
         }else{
             return false;
@@ -286,7 +286,7 @@ window.onload = function (){
     }
 
     function validateAddressHasNumber(addressField){
-        var blankSpace = addressField.value.indexOf(" ");
+        var blankSpace = addressField.value.indexOf(' ');
         var numberAddress = addressField.value.substring(blankSpace +1, addressField.value.length);
         if (validateNumbersAddress(numberAddress)){
             console.log('tiene numero');

@@ -1,3 +1,13 @@
+.wrap-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-image: none;
+}
+
 main{
     display: flex;
     flex-direction: row-reverse;
@@ -83,6 +93,12 @@ form button:hover{
 }
 
 @media screen and (min-width: 768px){
+    .wrap-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     p{
         text-align: center;
     }

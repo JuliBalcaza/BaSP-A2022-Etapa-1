@@ -6,8 +6,8 @@ For now, this is the Landing page with its different sections.
 
 How to open:
 ```
-1- access to the corresponding week's folder inside "BaSP-A2022-Etapa-1"
-2- open file "index.html" on your browser.
+1- access to the corresponding week's folder inside 'BaSP-A2022-Etapa-1'
+2- open file 'index.html' on your browser.
 ```
 
 About Gigatech Software Solutions SA:

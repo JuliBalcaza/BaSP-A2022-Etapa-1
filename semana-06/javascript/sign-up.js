@@ -141,9 +141,94 @@ window.onload = function (){
     var passwordPara= document.createElement('p');
     var repeatPara= document.createElement('p');
 
+    //requesting server//
+    function requestServer(){
+		var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?name='
+            + nameField.value
+            + '&surname=' + surnameField.value
+            + '&id=' + identityField.value
+            + '&dateBirth=' + dateField.value
+            + '&phone=' + phoneField.value
+			+ '&address=' + addressField.value
+			+ '&locality=' + localityField.value
+			+ '&zip=' + zipCodeField.value
+			+ '&email=' + emailField.value
+			+ '&password=' + passwordField.value;
+
+		fetch(url)
+        .then(function (res){
+			return res.json();
+		})
+		.then(function (data){
+            console.log(data);
+            if (data.success){
+                setLocalData(data);
+                alert('Your request: '
+                + data.msg
+                + 'Name: ' + data.data.name
+                + 'Surname: ' + data.data.lastName
+                + '\nID: ' + data.data.dni
+                + 'Date of Birth: ' + data.data.dob
+                + '\nPhone Number: ' + data.data.phone
+                + 'Address: ' + data.data.address
+                + '\nLocality: ' + data.data.city
+                + 'Zip Code: ' + data.data.zip
+                + '\nEmail: ' + data.data.email
+                + 'Password: ' + data.data.password);
+            }else{
+                alert(
+                    'Fail: ' + data.msg + 'Something went wrong, please check your information:'
+                    + '\nName: ' + data.data.name
+                    + 'Surname: ' + data.data.lastName
+                    + '\nID: ' + data.data.dni
+                    + 'Date of Birth: ' + data.data.dob
+                    + '\nPhone Number: ' + data.data.phone
+                    + 'Address: ' + data.data.address
+                    + '\nLocality: ' + data.data.city
+                    + 'Zip Code: ' + data.data.zip
+                    + '\nEmail: ' + data.data.email
+                    + '\nPassword: ' + data.data.password
+                );
+            }
+        })
+        .catch(function (err) {
+            alert('Fail ' + err);
+        });
+	}
+
+    //setting data for saving on local storage//
+    function setLocalData(data){
+        localStorage.setItem('nameData', data.data.nameField);
+		localStorage.setItem('surnameData', data.data.surnameField);
+		localStorage.setItem('idData', data.data.identityField);
+		localStorage.setItem('dateData', data.data.dateField);
+		localStorage.setItem('phoneData', data.data.phoneField);
+		localStorage.setItem('addressData', data.data.addressField);
+		localStorage.setItem('localityData', data.data.localityField);
+		localStorage.setItem('zipData', data.data.zipCodeField);
+		localStorage.setItem('emailData', data.data.emailField);
+		localStorage.setItem('passwordData', data.data.passwordField);
+    }
+
+    function saveFormLocalData() {
+		nameField.value = localStorage.getItem('nameData');
+		surnameField.value = localStorage.getItem('surnameData');
+		identityField.value = localStorage.getItem('idData');
+		dateField.value = localStorage.getItem('dateData')
+		phoneField.value = localStorage.getItem('phoneData');
+		addressField.value = localStorage.getItem('addressData');
+		localityField.value = localStorage.getItem('localityData');
+		zipCodeField.value = localStorage.getItem('zipData');
+		emailField.value = localStorage.getItem('emailData');
+		passwordField.value = localStorage.getItem('passwordData');
+		repeatPasswordField.value = localStorage.getItem('passwordData');
+	}
+
+    saveFormLocalData();
+
     //declaring empty field//
     function empty(inputField) {
-        if(inputField.value === ""){
+        if(inputField.value === ''){
             return true;
         }else{
             return false;
@@ -285,7 +370,6 @@ window.onload = function (){
         var splitDate = dateField.value.split('-');
         var year = splitDate[0];
         var currentYear = new Date().getFullYear();
-        console.log(currentYear);
         if(year > (currentYear - 18)){
             return true;
         }else{
@@ -368,7 +452,7 @@ window.onload = function (){
     }
 
     function validateAddressFirstLetter(addressField){
-        var blankSpace = addressField.value.indexOf(" ");
+        var blankSpace = addressField.value.indexOf(' ');
         var letterAddress = addressField.value.substring(0, blankSpace);
         if (!validateLettersAddress(letterAddress)){
             return true;
@@ -378,7 +462,7 @@ window.onload = function (){
     }
 
     function validateSpace(addressField){
-        if (addressField.value.indexOf(" ") >= 0){
+        if (addressField.value.indexOf(' ') >= 0){
             return true;
         }else{
             return false;
@@ -386,10 +470,9 @@ window.onload = function (){
     }
 
     function validateAddressHasNumber(addressField){
-        var blankSpace = addressField.value.indexOf(" ");
+        var blankSpace = addressField.value.indexOf(' ');
         var numberAddress = addressField.value.substring(blankSpace +1, addressField.value.length);
         if (validateNumbersAddress(numberAddress)){
-            console.log('tiene numero');
             return true;
         } else {
             return false;
@@ -496,7 +579,8 @@ window.onload = function (){
     function validateNumberZip(){
         var numbers = (zipCodeField.value.split(''));
         for(var i=0; i<numbers.length; i++){
-            if (numbers[i].toUpperCase() == numbers[i].toLowerCase() && (zipCodeField.value.length == 4 || zipCodeField.value.length == 5)){
+            if (numbers[i].toUpperCase() == numbers[i].toLowerCase()
+            && (zipCodeField.value.length == 4|| zipCodeField.value.length == 5)){
                 return true;
             }
         }
@@ -649,18 +733,7 @@ window.onload = function (){
         phoneValue && addressValue &&
         localityValue && zipValue &&
         emailValue && passwordValue && repeatValue){
-            alert(' Hello!' +
-            '\n' + 'Your Email: ' + emailField.value +
-            '\n' + 'Password: ' + passwordField.value +
-            '\n' + 'Surname: ' + surnameField.value +
-            '\n' + 'ID: ' + identityField.value +
-            '\n' + 'Phone: ' + phoneField.value +
-            '\n' + 'Address: ' + addressField.value +
-            '\n' + 'Locality: ' + localityField.value +
-            '\n' + 'Zip code: ' + zipCodeField.value +
-            '\n' + 'Email: ' + emailField.value +
-            '\n' + 'Password: ' + passwordField.value +
-            '\n' + 'Confirm Password: ' + repeatPasswordField.value);
+           requestServer();
         }else{
             alert('Some field is empty or contains error, please check your information');
         }

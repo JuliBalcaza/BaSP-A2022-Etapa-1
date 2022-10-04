@@ -57,7 +57,7 @@ window.onload = function (){
 
     //declaring empty field//
     function empty(inputField) {
-        if(inputField.value === ""){
+        if(inputField.value === ''){
             return true;
         }else{
             return false;
@@ -155,10 +155,6 @@ window.onload = function (){
     btnLogin.onclick = function(event){
         event.preventDefault();
         if(emailValue && passwordValue){
-            alert('Hello!' +
-            '\n' + 'Your Email: ' + emailField.value +
-            '\n' + 'Your Password: ' + passwordField.value +
-            '\n' + 'Welcome!');
             requestServer();
         }else{
             alert('Some field is empty or contains error, please check your information');
